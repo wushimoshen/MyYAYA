@@ -317,7 +317,7 @@ a.light-red {
 .top-ad,
 .nav-menu-cursor,
 .head-city {
-    display: none !important;
+    /* display: none !important; */
 }
 
 .head-city {

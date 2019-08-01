@@ -25,7 +25,7 @@ class ListManager {
     init() {
         this.oBox.className = `box-${this.dataHead.title} box`;
         this.oBox.innerHTML = this.createHTML();
-        document.body.appendChild(this.oBox);
+        $("#louceng")[0].appendChild(this.oBox);
         this.mouseEnter();
         // this.mouseEnter();
     }
@@ -53,7 +53,7 @@ class ListManager {
         <div class="main-main">
             <div class="left-ad">
                 <a href="" title=${this.leftAd.titile} class="top-ad">
-                    <img src=${this.leftAd.img} alt="" width="190px" height="290px">
+                    <img src=${this.leftAd.img} width="190px" height="290px">
                     <div class="div-tip">
                         <h3>${this.leftAd.h3}</h3>
                         <p>${this.leftAd.p}</p>

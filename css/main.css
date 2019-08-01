@@ -115,3 +115,143 @@
     width: 375px;
     height: 160px;
 }
+/* 更多好货 */
+.goodCommodity ul {
+    width: 1215px;
+}
+.goodCommodity li {
+    width: 202px;
+    height: 280px;
+    padding: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    line-height: 20px;
+}
+.anim-top {
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.goodCommodity li a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+}
+.goodCommodity li span {
+    display: block;
+}
+.goodCommodity li img {
+    vertical-align: top;
+    width: 100%;
+}
+.font14 {
+    font-size: 14px;
+}
+.row2 {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    overflow: hidden;
+}
+.margin-top {
+    margin-top: 10px;
+}
+.goodCommodity li p {
+    font-size: 14px;
+    line-height: 30px;
+}
+.red, a.red {
+    color: #e73828;
+}
+.goodCommodity li:hover {
+    box-shadow: 0 0 20px #ccc;
+}
+.anim-top:hover {
+    -webkit-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+.loadmore {
+    text-align: center;
+    padding-top: 10px;
+}
+.button::after, a.button::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 100%;
+    background: rgba(255,255,255,.4);
+}
+.loadmore a {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border: none;
+    font-size: 14px;
+    border: 1px solid #dfdfdf;
+    color: #999;
+}
+.button, a.button {
+    text-decoration: none;
+    background-color: #f3f3f3;
+    border: solid 1px #bbb;
+    border-radius: 3px;
+    font-family: 'Microsoft YaHei UI', SimHei;
+    cursor: pointer;
+    outline: 0;
+    color: #333;
+    transition: all ease-in-out .3s;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button:hover::after, a.button:hover::after {
+    width: 5px;
+    height: 5px;
+    -webkit-animation: buttonHoverAni 2.5s linear .1s;
+    animation: buttonHoverAni 2.5s linear .1s;
+}
+.loadmore a:hover {
+    background: #e73828;
+    color: #fff;
+    border: 1px solid #e73828;
+}
+
+/* 电梯 */
+.diy-elevator {
+    position: fixed;
+    top: 50px;
+    margin-left: -50px;
+    display: none;
+    z-index: 9;
+}
+.diy-elevator a {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    text-decoration: none;
+    line-height: 14px;
+    display: block;
+    text-align: center;
+    background: #bbb;
+    color: #fff;
+    margin-bottom: 1px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.diy-elevator a:hover, .diy-elevator a.active {
+    background: #333;
+}
+.diy-elevator a:last-child {
+    background: #4FB99F;
+}
