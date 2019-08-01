@@ -1,0 +1,117 @@
+.diy-topic {
+    margin-top: 20px;
+}
+/* 产品推荐 */
+.diy-topic .diy-list li {
+    float: left;
+}
+.margin-right {
+    margin-right: 10px;
+}
+.overflow-hide {
+    overflow: hidden;
+}
+.diy-topic .diy-list li:last-child {
+    margin-right: 0;
+}
+/* 三两宝马 */
+.diy-troika {
+    overflow: hidden;
+    margin-top: 20px;
+}
+.diy-troika .troika-list {
+    float: left;
+    width: 393px;
+    background: #fff;
+}
+.margin-right {
+    margin-right: 10px;
+}
+.diy-troika .troika-body {
+    padding: 10px;
+    overflow: hidden;
+}
+.diy-troika .troika-body .right a {
+
+    border-bottom: 1px dashed #d6d6d6;
+
+}
+.diy-troika .troika-body a {
+
+    display: block;
+    position: relative;
+    color: #555;
+    width: 186px;
+    height: 126px;
+
+}
+.anim-left {
+
+    overflow: hidden;
+    position: relative;
+
+}
+.diy-troika .troika-body a img {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+.anim-left img {
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    vertical-align: top;
+    
+}
+.diy-tip {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 10px;
+    line-height: 18px;
+    width: 170px;
+
+}
+.diy-tip h3 {
+
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: normal;
+
+}
+.diy-troika .troika-body .left {
+
+    border-right: 1px dashed #d6d6d6;
+
+}
+.diy-troika .troika-body .big-img {
+
+    border-bottom: 1px dashed #d6d6d6;
+    width: 186px;
+    height: 253px;
+
+}
+/* 售后服务 */
+.diy-shouhou {
+    margin-top: 20px;
+}
+.diy-shouhou a {
+    display: block;
+}
+.diy-shouhou a img {
+    vertical-align: top;
+    /* position: absolute; */
+}
+.sh-tip .get-src{
+    position: absolute;
+}
+.diy-shouhou .sh-tip {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 375px;
+    height: 160px;
+}

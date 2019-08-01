@@ -1,7 +1,9 @@
-body,html{
+body,
+html {
     width: 100%;
     height: 100%;
 }
+
 /* 头部部分 */
 .top {
     height: 30px;
@@ -10,16 +12,19 @@ body,html{
     position: relative;
     z-index: 97;
 }
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
 }
+
 .top-weizhi {
     line-height: 30px;
     color: #6b6b6b;
     overflow: hidden;
     display: block !important;
 }
+
 .top-login {
     line-height: 30px;
     color: #6b6b6b;
@@ -27,16 +32,20 @@ body,html{
     overflow: hidden;
     margin-left: 15px;
 }
+
 .left {
     float: left;
 }
+
 .top-menu {
     height: 30px;
     overflow: hidden;
 }
+
 .right {
     float: right;
 }
+
 /* 头部两个隐藏盒子 */
 .top-user-show {
     position: absolute;
@@ -48,24 +57,30 @@ body,html{
     display: none;
     z-index: 96;
 }
+
 .top-user-show a {
     display: block;
     height: 31px;
     line-height: 31px;
     color: #6b6b6b;
 }
-.top-user:hover,.top-sitemap:hover{
+
+.top-user:hover,
+.top-sitemap:hover {
     color: #196;
     /* background: #fff; */
 }
-.top-sitemap-show a:hover{
+
+.top-sitemap-show a:hover {
     color: #196;
 
 }
-.top-user-show a:hover{
+
+.top-user-show a:hover {
     color: #196;
 
 }
+
 .top-sitemap-show {
     position: absolute;
     background: #fff;
@@ -75,10 +90,12 @@ body,html{
     display: none;
     z-index: 96;
 }
+
 .top-sitemap-show ul {
     overflow: hidden;
     height: 200px;
 }
+
 .top-sitemap-show ul li {
     padding: 20px 0;
     height: 200px;
@@ -86,26 +103,37 @@ body,html{
     float: left;
     overflow: hidden;
 }
+
 .top-sitemap-show ul li h3 {
     font-weight: normal;
     margin: 0 20px 10px;
     font-size: 16px;
 }
-.orange, a.orange {
+
+.orange,
+a.orange {
     color: #f70;
 }
-.purple, a.purple {
+
+.purple,
+a.purple {
     color: #a776d9;
 }
-.light-blue, a.light-blue {
+
+.light-blue,
+a.light-blue {
     color: #7597dc;
 }
-.light-red, a.light-red {
+
+.light-red,
+a.light-red {
     color: #ff5050;
 }
+
 .top-sitemap-show ul li .fnav-list {
     padding: 0 20px;
 }
+
 .top-sitemap-show ul li a {
     float: left;
     height: 32px;
@@ -114,9 +142,11 @@ body,html{
     width: 99px;
     position: relative;
 }
+
 .top-sitemap-show ul li a i.hot-icon {
     background-position: left top;
 }
+
 .top-sitemap-show ul li a i {
     display: inline-block;
     position: absolute;
@@ -128,6 +158,7 @@ body,html{
     font-size: 10px;
     margin-left: 1px;
 }
+
 .top-weizhi i {
     width: 14px;
     height: 30px;
@@ -135,11 +166,13 @@ body,html{
     float: left;
     margin-right: 6px;
 }
+
 .top-login a {
     margin-left: 5px;
     color: #6b6b6b;
     position: relative;
 }
+
 .top-menu a {
     float: left;
     height: 30px;
@@ -153,6 +186,7 @@ body,html{
     border-left: solid 1px transparent;
     border-right: solid 1px transparent;
 }
+
 .top-menu a i.vip {
     background-position: -54px -18px;
     width: 18px;
@@ -161,6 +195,7 @@ body,html{
     position: relative;
     bottom: 2px;
 }
+
 .top-menu a .icon {
     display: inline-block;
     width: 18px;
@@ -169,9 +204,11 @@ body,html{
     margin-right: 3px;
     _display: inline;
 }
+
 .icon {
     background: url(../iconfont/icon.png?t=11) no-repeat;
 }
+
 .triangle-down {
     width: 0;
     height: 0;
@@ -182,14 +219,18 @@ body,html{
     vertical-align: middle;
     margin: 0 3px;
 }
+
 .top-menu a.top-telephone {
     font-size: 14px;
     color: #4FB99F;
 }
+
 .top-menu a.top-telephone i {
     background-position: -72px -18px;
 }
-.top-menu a.top-user i, .top-menu a.top-sitemap i {
+
+.top-menu a.top-user i,
+.top-menu a.top-sitemap i {
     /* -webkit-transition: -webkit-transform .3s; */
     transition: transform .3s;
 }
@@ -206,19 +247,23 @@ body,html{
     border: solid 1px #dfdfdf;
     background: #fff;
 }
+
 .city-wrap .city-hot {
     padding: 0 10px;
     margin-top: 15px;
 }
+
 .city-wrap .city-hot a {
     margin-right: 10px;
 }
+
 .city-wrap .city-tab {
     margin: 10px;
     border-bottom: solid 2px #4FB99F;
     height: 30px;
     line-height: 30px;
 }
+
 .city-wrap .city-tab a {
     display: inline-block;
     padding: 0 20px;
@@ -240,21 +285,26 @@ body,html{
     height: 145px;
     background: none;
 }
+
 .logo-box {
     width: 220px;
     height: 145px;
 }
+
 .logo-box {
     width: 320px;
     height: 100px;
 }
+
 .relative {
     position: relative;
 }
-.logo{
+
+.logo {
     width: 220px;
     height: 100px;
 }
+
 .logo a {
     display: block;
     line-height: 145px;
@@ -263,9 +313,13 @@ body,html{
     margin: 0;
     width: 100%;
 }
-.top-ad, .nav-menu-cursor, .head-city {
+
+.top-ad,
+.nav-menu-cursor,
+.head-city {
     display: none !important;
 }
+
 .head-city {
     border-left: solid 1px #dfdfdf;
     height: 45px;
@@ -273,10 +327,12 @@ body,html{
     padding-left: 30px;
     width: 125px;
 }
+
 /* 搜索 */
 .search {
     margin-left: 115px;
 }
+
 .search {
     margin-top: 25px;
     height: 72px;
@@ -284,9 +340,14 @@ body,html{
     margin-left: 40px;
     position: relative;
 }
-button, input, select, textarea {
+
+button,
+input,
+select,
+textarea {
     font-size: 100%;
 }
+
 .search-box {
     border: 2px solid #4FB99F;
     float: left;
@@ -296,6 +357,7 @@ button, input, select, textarea {
     outline: 0;
     padding: 0 5px;
 }
+
 .search-btn {
     background-color: #4FB99F;
     border: 0;
@@ -306,6 +368,7 @@ button, input, select, textarea {
     height: 38px;
     cursor: pointer;
 }
+
 .search-history {
     font-size: 12px;
     padding: 0 10px;
@@ -319,12 +382,14 @@ button, input, select, textarea {
     display: none;
     z-index: 95;
 }
+
 .search-history dt {
     width: 70px;
     float: left;
     line-height: 36px;
     color: #9c9c9c;
 }
+
 .search-history dd a {
     display: block;
     height: 36px;
@@ -333,6 +398,7 @@ button, input, select, textarea {
     border-bottom: solid 1px #dfdfdf;
     overflow: hidden;
 }
+
 .search-guess {
     position: absolute;
     top: 38px;
@@ -343,6 +409,7 @@ button, input, select, textarea {
     box-shadow: 1px 1px 3px #666;
     z-index: 95;
 }
+
 .search p {
     height: 25px;
     line-height: 25px;
@@ -351,23 +418,27 @@ button, input, select, textarea {
     overflow: hidden;
     width: 540px;
 }
+
 .search p a {
     color: #999;
     margin-right: 14px;
     display: inline-block;
 }
+
 /* 购物车 */
 .header-qrcode {
     width: 220px;
     height: 145px;
     text-align: right;
 }
+
 .header-cart {
     width: 160px;
     margin-top: 25px;
     float: right;
     position: relative;
 }
+
 .header-cart a {
     background: #fff;
     border: solid 1px #dfdfdf;
@@ -379,6 +450,7 @@ button, input, select, textarea {
     position: relative;
     z-index: 95;
 }
+
 .header-cart a span {
     display: none;
     padding: 0 3px;
@@ -388,6 +460,7 @@ button, input, select, textarea {
     line-height: 14px;
     border-radius: 14px;
 }
+
 .header-cart-box {
     width: 300px;
     height: 500px;
@@ -421,6 +494,7 @@ button, input, select, textarea {
     height: 45px;
     line-height: 45px;
 }
+
 .navshang a {
     font-family: 'Microsoft YaHei';
     font-size: 16px;
@@ -438,6 +512,7 @@ button, input, select, textarea {
     position: relative;
     z-index: 9;
 }
+
 .sub_nav>div {
     display: none;
     background: #fff;
@@ -447,6 +522,7 @@ button, input, select, textarea {
     width: 110px;
     box-shadow: 0 0 3px #666;
 }
+
 .sub_nav>div a {
     display: block;
     float: none;
@@ -461,7 +537,7 @@ button, input, select, textarea {
     overflow: visible;
     width: 220px;
     height: 480px;
-    background: #419c86;
+    background: rgba(51,51,51,.6);
     position: absolute;
     top: 47px;
     left: 0;
@@ -474,10 +550,11 @@ button, input, select, textarea {
     height: 80px;
     padding: 8px;
     box-sizing: border-box;
-    background: #ccc;
+    /* background: #ccc; */
     /* margin-bottom: 10px; */
     /* background: #333 */
 }
+
 .nav-li span {
     display: block;
     height: 44px;
@@ -485,12 +562,14 @@ button, input, select, textarea {
     overflow: hidden;
     padding-left: 24px;
 }
+
 .nav li b {
     display: block;
     height: 20px;
     line-height: 20px;
     overflow: hidden;
 }
+
 .nav-li b i {
     display: inline-block;
     width: 16px;
@@ -499,27 +578,35 @@ button, input, select, textarea {
     vertical-align: text-top;
     vertical-align: middle\9;
 }
+
 .nav-li b i.m2 {
     background-position: -32px -36px;
 }
+
 .nav-li b i.m9 {
     background-position: -154px -18px;
 }
+
 .nav-li b i.m4 {
     background-position: -98px -36px;
 }
+
 .nav-li b i.m1 {
     background-position: -65px -36px;
 }
+
 .nav-li b i.m3 {
     background-position: -65px -36px;
 }
+
 .nav-li b i.m7 {
     background-position: -114px -21px;
 }
+
 .nav .current {
-    background: rgba(51,51,51.5);
+    background: rgba(51, 51, 51.5);
 }
+
 .nav-li b s {
     text-decoration: none;
     font-family: SimSun;
@@ -530,12 +617,14 @@ button, input, select, textarea {
     *display: none;
     transition: all .5s;
 }
+
 .nav-li b a {
     color: #fff;
     margin-right: 10px;
     font-size: 13px;
     font-weight: normal;
 }
+
 .nav-li>span a {
     margin-right: 8px;
     white-space: nowrap;
@@ -543,11 +632,10 @@ button, input, select, textarea {
     color: #fff;
     opacity: .8;
 }
+
 .list {
-    height: 480px;
-    width: 680px;
-    /* height: 100%; */
-    /* float: right; */
+    min-height: 468px;
+    width: 760px;
     position: absolute;
     left: 220px;
     top: 0px;
@@ -556,36 +644,49 @@ button, input, select, textarea {
     box-sizing: border-box;
     background: #fff;
     z-index: 9;
+    border: 1px solid #dfdfdf;
+    border-left-color: rgb(223, 223, 223);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left: none;
 }
-
+.list a:hover{
+    color: #196;
+}
 .nav .listCurrent {
     display: block;
 }
 
-.list div {
-    height: 30px;
-    padding: 17px;
-    border-bottom: 1px solid #ccc;
+.list .left {
+    width: 510px;
+    margin: 10px;
 }
 
-.list div h4 {
-    width: 80px;
-    height: 100%;
+.list .left div {
+    border-bottom: solid 1px #eee;
+    clear: both;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.list .left div h4 {
     float: left;
-    color: #f15;
+    width: 70px;
+    line-height: 25px;
+    color: #4FB99F;
 }
 
-.list div p {
-    width: 550px;
-    height: 100%;
-    float: left;
+.list .left div p {
+    margin-left: 70px;
+    line-height: 25px;
 }
 
-.nav-li a {
-    text-decoration: none;
-    color: #111;
-    margin-right: 5px;
-
+.list .left p a {
+    margin-right: 7px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .list a {
@@ -602,93 +703,15 @@ button, input, select, textarea {
     color: #cfcfcf;
     text-decoration: none !important;
 }
-/* 轮播图部分 */
-.slider {
-    height: 480px;
-    width: 680px;
-    /* border-radius: 10px; */
-    overflow: hidden;
+
+.list .right {
+    width: 200px;
+    height: 459px;
+    padding: 10px;
     position: relative;
-    /* float: left; */
-    /* background: #333; */
-    left:0px;
-    top: 0;
 }
 
-.slider-box {
-    background: #dddddd;
-    width: 10000px;
-    height: 480px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-}
-
-.slider-box-item {
-    width: 680px;
-    height: 480px;
-    float: left;
-    font-size: 40px;
-    text-align: center;
-    line-height: 480px;
-}
-
-.slider-box-item img {
-    width: 680px;
-    height: 480px;
-}
-
-.slider-control {
-    position: absolute;
-     width: 100%;
-    /* height: 100px; */ 
-    /* width: 40px; */
-    height: 70px;
-    line-height: 70px;
-    top: 50%;
-    margin-top: -35px;
-    font-size: 50px;
-    /* background: #ddd; */
-    color: #fff;
-    display: none;
-}
-.slider-control span{
-    display: inline-block;
-    width: 40px;
-    line-height: 70px;
-    background: #aaa;
-}
-.prev {
-    margin-left: 20px;
-}
-
-.next {
-    float: right;
-    margin-right: 20px;
-}
-
-.slider-nav {
-    position: absolute;
-    /* right: 30px;
-     */
-     left: 50%;
-     margin-left: -40px;
-    bottom: 10px;
-    height: 30px;
-}
-
-.slider-nav-item {
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    float: left;
-    border-radius: 15px;
-    margin: 0 5px;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-}
-
-.active {
-    background: red;
+.menu_ad {
+    width: 200px;
+    height: 460px;
 }

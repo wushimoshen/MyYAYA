@@ -1,0 +1,177 @@
+
+/* html,body{
+    width: 100%;
+    height: 100%;
+} */
+/* .box{
+    width: 1200px;
+    margin: 0 auto;
+    /* background: #ccc; */
+/* }  */
+.title{
+    margin: 20px auto;
+}
+
+.diy-floor {
+    background: #fff;
+    margin-bottom: 20px;
+    height: auto;
+}
+/* 主要部分 */
+/* .main-main{
+    width: 100%;
+    height: 800px;
+} */
+.diy-floor .main-main {
+    padding: 10px;
+    overflow: hidden;
+}
+.main-main .left-ad{
+    float: left;
+    width: 190px;
+}
+.main-main .right-ad{
+    float: right;
+    width: 190px;
+}
+.main-brank{
+    width: 100%;
+}
+.brank-list{
+    height: 46px;
+    line-height: 46px;
+    /* position: absolute; */
+    padding: 0 15px;
+    width: 100%;
+    z-index: 9;
+    box-sizing: border-box;
+    background: #734e8b;
+}
+.brank-list span {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.left {
+    float: left;
+}
+.brank-list a {
+    color: black;
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 16px 0 0 15px;
+    padding-right: 15px;
+} 
+/* 左侧火热销售 */
+.diy-floor a{
+    display: block;
+}
+.top-ad{
+    position: relative;
+    overflow: hidden;
+}
+.top-ad img,.anim-left img{
+    transition-duration: .3s;
+    vertical-align: top;
+}
+.div-tip{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 10px;
+    line-height: 18px;
+    width: 170px;
+}
+.div-tip p{
+    font-size: 12px;
+}
+.diy-floor .bottom-ad {
+    position: relative;
+    display: block;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    background: #734e8b;
+}
+.bottom-ad dl dd span {
+    width: 70px;
+    display: inline-block;
+    line-height: 20px;
+}
+em {
+    font-style: italic;
+}
+.diy-floor .bottom-ad:before {
+    content: '';
+    border-top: 6px solid #444;
+    border-left: 10px solid transparent;
+    left: -10px;
+    top: 0;
+    position: absolute;
+}
+.diy-floor .text-ad {
+    line-height: 34px;
+    position: absolute;
+    top: -34px;
+    width: 150px;
+    left: -10px;
+    padding: 0 30px 0 20px;
+    opacity: 0.7;
+    text-align: left;
+    color: #fff;
+    background: #734e8b;
+}
+ .bottom-ad dl {
+    padding: 30px 20px;
+}
+/* 中间列表栏 */
+.diy-floor .shop-list {
+    float: left;
+    margin-left: 10px;
+    width: 780px;
+    height: 440px;
+}
+.diy-floor .shop-list ul {
+    overflow: hidden;
+    height: 439px;
+}
+.shop-list ul li{
+    float: left;
+    width: 25%;
+    height: 220px;
+}
+.shop-list ul li a{
+border-right: 1px dashed #d6d6d6;
+border-bottom: 1px dashed #d6d6d6;
+position: relative;
+display: block;
+height: 220px;
+}
+.diy-floor .shop-list li img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 0;
+    bottom: 0;
+}
+.div-tip h3 {
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: normal;
+}
+.div-tip p{
+    color: #555;
+}
+/* 右边栏 */
+.diy-floor .right-ad a {
+    height: 110px;
+}
+.diy-floor .right-ad a img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    bottom: 0;
+}

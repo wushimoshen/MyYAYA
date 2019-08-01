@@ -1,0 +1,315 @@
+/* 轮播图部分 */
+.banner-bg {
+    height: 480px;
+    width: 100%;
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.slider {
+    height: 486px;
+    width: 760px;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    position: relative;
+    /* float: left; */
+    /* background: #333; */
+    left: 220px;
+    top: -3px;
+}
+
+.slider-box {
+    /* background: #dddddd; */
+    width: 10000px;
+    height: 480px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.slider-box-item {
+    width: 760px;
+    height: 480px;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    line-height: 480px;
+}
+
+.slider-box-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-control {
+    position: absolute;
+    width: 100%;
+    /* height: 100px; */
+    /* width: 40px; */
+    height: 70px;
+    line-height: 70px;
+    top: 50%;
+    margin-top: -35px;
+    font-size: 50px;
+    /* background: #ddd; */
+    color: #fff;
+    display: none;
+}
+
+.slider-control span {
+    display: inline-block;
+    width: 40px;
+    line-height: 70px;
+    background: #aaa;
+}
+
+.prev {
+    margin-left: 20px;
+}
+
+.next {
+    float: right;
+    margin-right: 20px;
+}
+
+.slider-nav {
+    position: absolute;
+    /* right: 30px;
+     */
+    left: 50%;
+    margin-left: -40px;
+    bottom: 10px;
+    height: 30px;
+}
+
+.slider-nav-item {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    float: left;
+    border-radius: 15px;
+    margin: 0 5px;
+    text-align: center;
+    width: 12px;
+    height: 12px;
+    line-height: 30px;
+}
+
+.active {
+    background: red;
+}
+
+/* 轮播右侧 */
+.side_box {
+    width: 220px;
+    background: #fff;
+    height: 480px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.user-login {
+    padding: 10px;
+}
+
+.user-login dt {
+    float: left;
+    border: 3px solid #eee;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 42px;
+    height: 42px;
+    margin: 0 5px;
+}
+
+.user-login dd {
+    margin-left: 64px;
+    line-height: 22px;
+}
+
+.main-color,
+a.main-color {
+    color: #4FB99F;
+}
+
+.notice {
+    height: auto;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.notice {
+    margin-top: 0;
+    background: #fff;
+}
+
+.notice {
+    margin-top: 10px;
+    border-top: solid 1px #eee;
+    height: auto;
+}
+
+.side_title {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    border-bottom: solid 1px #eee;
+}
+
+.side-tab {
+    font-weight: normal;
+}
+
+.side-tab a {
+    color: #333;
+}
+
+.side-tab a {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    float: none;
+}
+
+.side-tab .change-icon {
+    cursor: pointer;
+    float: right;
+    display: none;
+    color: #9c9c9c;
+}
+
+.notice ul {
+    margin: 10px 0;
+    height: 72px;
+    overflow: hidden;
+}
+
+.notice ul li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.notice ul li {
+    height: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+    _width: 195px;
+}
+
+.notice ul li a {
+    color: #999;
+}
+
+.notice ul li:first-child a {
+    color: #333;
+}
+
+.service {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.service {
+    width: 222px;
+    overflow: hidden;
+    overflow: hidden;
+    background: #fff;
+    border-top: solid 1px #eee;
+    margin-top: -1px;
+    position: relative;
+}
+
+.side_title b {
+    font-size: 14px;
+}
+
+.service-menu a {
+    height: 73px;
+}
+
+.service-menu a {
+    display: block;
+    width: 73px;
+    border-right: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+    height: 73px;
+    float: left;
+    text-align: center;
+}
+.service-menu a:hover{
+    color: #4FB99F;
+    background: #f6f6f6;
+}
+.service-menu a i.vip {
+    background-position: 0 0;
+}
+
+.service-menu a i {
+    width: 36px;
+    height: 36px;
+    margin: 8px auto 4px;
+}
+
+.service-menu a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+}
+
+.service-menu a i.md {
+    background-position: -51px 0;
+}
+
+.service-menu a i.zc {
+    background-position: -204px 0;
+}
+
+.service-menu a i.qd {
+    background-position: -306px 0;
+}
+
+.service-menu a i.bx {
+    background-position: -357px 0;
+}
+
+.service-menu a i.yb {
+    background-position: -408px 0;
+}
+
+.service-menu a i.ys {
+    background-position: -153px 0;
+}
+
+.service-menu a i.es {
+    background-position: -255px 0;
+}
+
+.service-menu a i.hs {
+    background-position: -305px 0;
+}
+
+.service-icon {
+    background: url(../iconfont/service-icon-new2.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: 495px;
+    -ms-behavior: url(/static/style/background-size.htc);
+}

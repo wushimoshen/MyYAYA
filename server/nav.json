@@ -1,31 +1,31 @@
 {
     "data1": [{
         "title": "手机通讯",
-        "iconf":"m2",
+        "iconf": "m2",
         "list": ["华为", "P30", "三星", "S10", "小米 9", "华为", "Mate 20 ", "iPhone XR"]
     }, {
         "title": "智能家居/智能健康",
-        "iconf":"m9",
+        "iconf": "m9",
 
         "list": ["加湿器", "电动牙刷", "插座", "智能电视", "智能安防"]
     }, {
         "title": "智能穿戴/智能出行",
-        "iconf":"m4",
+        "iconf": "m4",
 
         "list": ["智能手表", "儿童手表", "智能手环", "车载充电器", "车载支架"]
     }, {
         "title": "手机配件",
-        "iconf":"m1",
+        "iconf": "m1",
 
         "list": ["保护膜", "保护壳", "数据线", "充电器", "移动电源", "手机耳机"]
     }, {
         "title": "电脑办公",
-        "iconf":"m3",
+        "iconf": "m3",
 
         "list": ["平板电脑", "轻薄本", "游戏本", "路由器", "键盘/鼠标", "U盘"]
     }, {
         "title": "时尚影音/娱乐竞技",
-        "iconf":"m7",
+        "iconf": "m7",
 
         "list": ["Beats", "SONY", "华为", "Bose", "智能音箱", "无人机", "摄影摄像"]
     }],
@@ -139,5 +139,60 @@
             "list": ["相机", "播放器", "翻译机"]
         }]
     ],
-    "data3": ["../img/1.jpg", "../img/2.jpg", "../img/3.jpg", "../img/4.jpg", "../img/5.jpg", "../img/6.jpg"]
+    "data3": {
+        "img": ["../img/1.jpg", "../img/2.jpg", "../img/3.jpg", "../img/4.jpg", "../img/5.jpg", "../img/6.jpg"],
+        "index": ["rgb(252, 93, 45) none repeat scroll 0% 0%",
+            "rgb(148, 221, 253) none repeat scroll 0% 0%",
+            "rgb(235, 236, 240) none repeat scroll 0% 0%",
+            "rgb(46, 98, 148) none repeat scroll 0% 0%",
+            "rgb(200, 218, 255) none repeat scroll 0% 0%",
+            "rgb(232, 231, 237) none repeat scroll 0% 0%"
+        ]
+    },
+    "data4": [{
+            "f": "ia_10001.jpg",
+            "e": "ia_10002.jpg"
+        },
+        {
+            "f": "ia_10003.jpg",
+            "e": "ia_10004.jpg"
+        },
+        {
+            "f": "ia_10005.jpg",
+            "e": "ia_10006.jpg"
+        },
+        {
+            "f": "ia_10007.jpg",
+            "e": "ia_10008.jpg"
+        },
+        {
+            "f": "ia_10009.jpg",
+            "e": "ia_10010.jpg"
+        },
+        {
+            "f": "ia_10011.jpg",
+            "e": "ia_10012.jpg"
+        }
+    ],
+    "data5": [{
+            "title": "iPhoneXR",
+            "src": "https://img2.yaya.cn//newstatic/1593/ff85612e5c4291.png"
+        },
+        {
+            "title": "华为P30",
+            "src": "https://img2.yaya.cn//newstatic/1590/ff8564161b7f68.png"
+        },
+        {
+            "title": "红米k20 Pro",
+            "src": "https://img2.yaya.cn//newstatic/1588/f5ece8e8c37a95.png"
+        },
+        {
+            "title": "mate 20 Pro",
+            "src": "https://img2.yaya.cn//newstatic/1592/f5ecf62a93cfd6.png"
+        },
+        {
+            "title": "OPPO Reno",
+            "src": "https://img2.yaya.cn//newstatic/1587/f5ed00ec931fa5.png"
+        }
+    ]
 }

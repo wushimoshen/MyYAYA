@@ -6,6 +6,7 @@ class MarganList {
         this.data1 = data.data1;
         this.data2 = data.data2;
         this.data3 = data.data3;
+        this.data4 = data.data4;
         this.currentIndex = 0;
         this.index = 0;
         this.sliderBoxItemCount = this.data3.length;
@@ -75,7 +76,15 @@ class MarganList {
             html += `<li class="nav-li">
         <p><b><i class="icon ${element.iconf}"></i><a title="${element.title}" href="">${element.title}</a><s>&gt;</s></b></p>
         <span>${element.list.map(ele=> `<a href="">${ele}</a>`).join("")}</span>
-        <div class="list">${this.creatList(i)}
+        <div class="list"><div class="left">${this.creatList(i)}</div>
+        <div class="right">
+            <div class ="menu_ad">
+            <a href="https://www.yaya.cn/product/57646.html" title="iPhone 8 Plus" style="border-top: 0px none;">
+            <img src="../img/${this.data4[i].f}" width="200" height="230"></a>
+            <a href="https://www.yaya.cn/product/77775.html" title="华为 nova 5 Pro">
+            <img src="../img/${this.data4[i].e}" width="200" height="230"></a>
+            </div>
+        </div>
         </div>
             </li>`
         });
@@ -232,3 +241,11 @@ class MarganList {
 
 // let list = new MarganList(data);
 // list.init();
+
+                            
+/* <a href="https://www.yaya.cn/product/57646.html" title="iPhone 8 Plus" style="border-top: 0px none;">
+<img src="https://img2.ch999img.com/newstatic/1526/fbea6cf7dd532e.jpg" width="200" height="230"></a>
+
+<a href="https://www.yaya.cn/product/77775.html" title="华为 nova 5 Pro">
+<img src="https://img2.ch999img.com/newstatic/1529/fbea5e0ba93e39.jpg" width="200" height="230"></a> */
+
