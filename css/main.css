@@ -1,4 +1,4 @@
-.diy-topic {
+#go_topic {
     margin-top: 20px;
 }
 /* 产品推荐 */
@@ -118,6 +118,7 @@
 /* 更多好货 */
 .goodCommodity ul {
     width: 1215px;
+    overflow: hidden;
 }
 .goodCommodity li {
     width: 202px;
@@ -254,4 +255,450 @@
 }
 .diy-elevator a:last-child {
     background: #4FB99F;
+}
+
+
+
+
+
+/* 楼梯层 */
+.title{
+    margin: 20px auto;
+}
+
+.diy-floor {
+    background: #fff;
+    margin-bottom: 20px;
+    height: auto;
+}
+/* 主要部分 */
+/* .main-main{
+    width: 100%;
+    height: 800px;
+} */
+.diy-floor .main-main {
+    padding: 10px;
+    overflow: hidden;
+}
+.main-main .left-ad{
+    float: left;
+    width: 190px;
+}
+.main-main .right-ad{
+    float: right;
+    width: 190px;
+}
+.main-brank{
+    width: 100%;
+}
+.brank-list{
+    height: 46px;
+    line-height: 46px;
+    /* position: absolute; */
+    padding: 0 15px;
+    width: 100%;
+    z-index: 9;
+    box-sizing: border-box;
+    background: #734e8b;
+}
+.brank-list span {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.left {
+    float: left;
+}
+.brank-list a {
+    color: black;
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 16px 0 0 15px;
+    padding-right: 15px;
+} 
+/* 左侧火热销售 */
+.diy-floor a{
+    display: block;
+}
+.top-ad{
+    position: relative;
+    overflow: hidden;
+}
+.top-ad img,.anim-left img{
+    transition-duration: .3s;
+    vertical-align: top;
+}
+.div-tip{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 10px;
+    line-height: 18px;
+    width: 170px;
+}
+.div-tip p{
+    font-size: 12px;
+}
+.diy-floor .bottom-ad {
+    position: relative;
+    display: block;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    background: #734e8b;
+}
+.bottom-ad dl dd span {
+    width: 70px;
+    display: inline-block;
+    line-height: 20px;
+}
+em {
+    font-style: italic;
+}
+.diy-floor .bottom-ad:before {
+    content: '';
+    border-top: 6px solid #444;
+    border-left: 10px solid transparent;
+    left: -10px;
+    top: 0;
+    position: absolute;
+}
+.diy-floor .text-ad {
+    line-height: 34px;
+    position: absolute;
+    top: -34px;
+    width: 150px;
+    left: -10px;
+    padding: 0 30px 0 20px;
+    opacity: 0.7;
+    text-align: left;
+    color: #fff;
+    background: #734e8b;
+}
+ .bottom-ad dl {
+    padding: 30px 20px;
+}
+/* 中间列表栏 */
+.diy-floor .shop-list {
+    float: left;
+    margin-left: 10px;
+    width: 780px;
+    height: 440px;
+}
+.diy-floor .shop-list ul {
+    overflow: hidden;
+    height: 439px;
+}
+.shop-list ul li{
+    float: left;
+    width: 25%;
+    height: 220px;
+}
+.shop-list ul li a{
+border-right: 1px dashed #d6d6d6;
+border-bottom: 1px dashed #d6d6d6;
+position: relative;
+display: block;
+height: 220px;
+}
+.diy-floor .shop-list li img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 0;
+    bottom: 0;
+}
+.div-tip h3 {
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: normal;
+}
+.div-tip p{
+    color: #555;
+}
+/* 右边栏 */
+.diy-floor .right-ad a {
+    height: 110px;
+}
+.diy-floor .right-ad a img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    bottom: 0;
+}
+.top-ad img {
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.top-ad:hover img {
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部和右侧栏 */
+.footer {
+    margin-top: 30px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.promise {
+    height: 110px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.promise a {
+    width: 220px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.promise dl {
+    width: 220px;
+}
+.promise dl dt.p0 {
+    background-position: 0 -232px;
+}
+.promise dl dt.p1 {
+    background-position: -50px -232px;
+}
+.promise dl dt {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.promise dl dd {
+    margin-left: 60px;
+    font-family: 'Microsoft YaHei';
+}
+.promise dl dd h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.promise dl dd p {
+    color: #9c9c9c;
+}
+.promise dl dt.p2 {
+    background-position: -100px -232px;
+}
+.promise dl dt.p3 {
+    background-position: -150px -232px;
+}
+.promise dl dt.p4 {
+    background-position: 0 -282px;
+}
+
+.foot-help {
+    border-top: solid 1px #eee;
+    height: 160px;
+}
+
+.foot-help {
+    border-top: solid 1px #eee;
+    height: 160px;
+}
+.foot-help dl {
+    float: left;
+    height: 110px;
+    width: 180px;
+    padding-top: 30px;
+}
+.foot-help dl dt {
+    font-size: 14px;
+    padding-left: 8px;
+}
+.foot-help dl dd {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.foot-help dl dd a {
+    display: block;
+    line-height: 25px;
+    color: #9c9c9c;
+}
+.foot-help dl.foot-sns {
+    width: 250px;
+    float: right;
+}
+.foot-help dl {
+    float: left;
+    height: 110px;
+    width: 180px;
+    padding-top: 30px;
+}
+.foot-help dl.foot-sns dt {
+    width: 70px;
+    height: 70px;
+    float: left;
+    background-position: -130px -282px;
+    padding: 0;
+}
+.foot-help dl.foot-sns dd {
+    padding: 0;
+    margin: 0 0 0 75px;
+}
+.foot-help dl.foot-sns dd h4 {
+    font-weight: normal;
+    font-size: 14px;
+}
+.foot-help dl.foot-sns dd p {
+    margin-top: 5px;
+    line-height: 20px;
+    color: #999;
+}
+.foot_nav {
+    height: 50px;
+    line-height: 50px;
+    text-shadow: 0 1px 0 #fff;
+    text-align: center;
+}
+.foot_nav i {
+    margin: 0 15px;
+    color: #ccc;
+}
+.copy {
+    padding-bottom: 15px;
+    text-align: center;
+}
+.copy p {
+    line-height: 25px;
+    color: #999;
+    text-shadow: 0 1px 0 #fff;
+}
+.bot-link {
+    text-align: center;
+    height: 60px;
+}
+.bot-link a {
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    background: url(../html/img-2/bot_link.jpg) no-repeat;
+    border: solid 1px #eee;
+    border-radius: 3px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.bot-link a:nth-child(3){
+    background-position: 0 -100px;
+}
+.bot-link a:nth-child(4){
+    background-position: 0 -50px;
+}
+
+/* 右侧栏 */
+.tool-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 100%;
+    background: #505050;
+    z-index: 98;
+    transition: width .3s ease;
+}
+.tool-bar-menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 250px;
+    margin-top: -125px;
+}
+.tool-bar-menu a, .scroll-to-top {
+    width: 25px;
+    height: 25px;
+    display: block;
+    padding: 5px;
+    position: relative;
+}
+.tool-bar-menu a.tool-cart i {
+    background-position: -25px -332px;
+}
+.tool-bar-menu a.tool-shop i {
+    background-position: -75px -332px;
+}
+.tool-bar-menu a.tool-custom i {
+    background-position: -100px -332px;
+}
+.tool-bar-menu a.tool-complain i {
+    background-position: 0 -357px;
+}
+.tool-bar-menu a.tool-wechat i {
+    background-position: -25px -357px;
+}
+.tool-bar-menu a.tool-vs i {
+    background-position: -100px -357px;
+}
+.tool-bar-menu a i {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+.tool-bar-menu a span, .scroll-to-top span {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 70px;
+    height: 35px;
+    background: #419c86;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    transition: left .2s ease;
+    -webkit-transition: left .2s ease;
+}
+.tool-bar-menu a span em, .scroll-to-top span em {
+    border-top: 5px solid transparent;
+    border-left: 5px solid #419c86;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    right: 0;
+    right: -5px;
+    top: 13px;
+}
+.scroll-to-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+.scroll-to-top i {
+    background-position: 0 -332px;
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+.tool-bar-menu a:hover, .scroll-to-top:hover {
+    overflow: visible;
+    background: #4FB99F;
+    text-align: center;
+    text-decoration: none;
+}
+.tool-bar-menu a:hover span, .scroll-to-top:hover span {
+    left: -70px;
+    visibility: visible;
+}
+.tool-bar-menu a.tool-wechat span {
+    left: -100px;
+    width: 100px;
+    height: 100px;
 }

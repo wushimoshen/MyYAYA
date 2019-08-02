@@ -128,5 +128,6 @@ class ListManager {
              // 鼠标移出时
              $(this).children("img").css("right", "0px")
         });
+        
     }
 }

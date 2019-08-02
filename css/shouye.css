@@ -70,7 +70,11 @@ html {
     color: #196;
     /* background: #fff; */
 }
+.top-user:hover i,.top-sitemap:hover i{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg)
 
+}
 .top-sitemap-show a:hover {
     color: #196;
 
@@ -171,6 +175,20 @@ a.light-red {
     margin-left: 5px;
     color: #6b6b6b;
     position: relative;
+}
+.sub_nav:hover > div {
+    display: block;
+}
+.sub_nav > div a:hover {
+    background: #4FB99F;
+    color: #fff;
+}
+.nav a:hover {
+    color: #4FB99F;
+}
+a:hover {
+    text-decoration: none;
+    color: #4FB99F;
 }
 
 .top-menu a {
@@ -326,6 +344,7 @@ a.light-red {
     margin-top: 28px;
     padding-left: 30px;
     width: 125px;
+    display: none;
 }
 
 /* 搜索 */

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/lunbo.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/louceng.css">
+    <!-- <link rel="stylesheet" href="../css/louceng.css"> -->
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/navandbanner.js"></script>
     <script src="../js/banner.js"></script>
@@ -516,6 +516,11 @@
                 </div>
             </div>
         </div>
+        <!-- 底部 -->
+        <div id="foot"></div>
+        <!-- 右侧栏 -->
+        <div id="tool-bar" class="tool-bar">
+        </div>
     </div>
 </body>
 <script>
@@ -605,40 +610,54 @@
         //电梯根据页面滚动而变化
         $(window).scroll(function () {
             var value = window.scrollY;
-           if(value <= 665){
-               $("#dianti").hide();
-           }
-           else{
-            $("#dianti").show();
-           }
-          if(value>=665&&value<965){
-              $("#dianti a").eq(0).addClass("active").siblings().removeClass("active");
-          }
-          else if(value>=965&&value<1665){
-              $("#dianti a").eq(1).addClass("active").siblings().removeClass("active");
-          }
-          else if(value>=1665&&value<2236){
-              $("#dianti a").eq(2).addClass("active").siblings().removeClass("active");
-          }
-          else if(value>=2236&&value<2813){
-              $("#dianti a").eq(3).addClass("active").siblings().removeClass("active");
-          }
-          else if(value>=2813&&value<3396){
-              $("#dianti a").eq(4).addClass("active").siblings().removeClass("active");
-          }
-          if(value>=3396&&value<3976){
-              $("#dianti a").eq(5).addClass("active").siblings().removeClass("active");
-          }
-          else if(value>=3976&&value<4551){
-              $("#dianti a").eq(6).addClass("active").siblings().removeClass("active");
-          }
-          else if(value>=4551&&value<5120){
-              $("#dianti a").eq(7).addClass("active").siblings().removeClass("active");
-          }
-          else if(value>5120){
-              $("#dianti a").eq(8).addClass("active").siblings().removeClass("active");
-          }
+            if (value <= 665) {
+                $("#dianti").hide();
+            } else {
+                $("#dianti").show();
+            }
+            if (value >= 665 && value < 965) {
+                $("#dianti a").eq(0).addClass("active").siblings().removeClass("active");
+            } else if (value >= 965 && value < 1665) {
+                $("#dianti a").eq(1).addClass("active").siblings().removeClass("active");
+            } else if (value >= 1665 && value < 2236) {
+                $("#dianti a").eq(2).addClass("active").siblings().removeClass("active");
+            } else if (value >= 2236 && value < 2813) {
+                $("#dianti a").eq(3).addClass("active").siblings().removeClass("active");
+            } else if (value >= 2813 && value < 3396) {
+                $("#dianti a").eq(4).addClass("active").siblings().removeClass("active");
+            }
+            if (value >= 3396 && value < 3976) {
+                $("#dianti a").eq(5).addClass("active").siblings().removeClass("active");
+            } else if (value >= 3976 && value < 4551) {
+                $("#dianti a").eq(6).addClass("active").siblings().removeClass("active");
+            } else if (value >= 4551 && value < 5120) {
+                $("#dianti a").eq(7).addClass("active").siblings().removeClass("active");
+            } else if (value > 5120) {
+                $("#dianti a").eq(8).addClass("active").siblings().removeClass("active");
+            }
         });
+
+        // // 模块化
+        Promise.all([
+            new Promise(function (resolve, reject) {
+                $("#foot").load("bottom.html", function () {
+                    console.log("加载了两个标签");
+                    resolve();
+                });
+
+            }),new Promise(function (resolve, reject) {
+                $("#tool-bar").load("rightbox.html", function () {
+                    console.log("加载了右侧标签");
+                    resolve();
+                });
+
+            })
+        ]).then(function(){
+                $(".scroll-to-top").click(function(){
+                    window.scrollTo(0,0);
+                })
+                
+            })
     })
 </script>
 
