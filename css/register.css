@@ -1,0 +1,157 @@
+body{
+    background: #f6f6f6;
+}
+.wrapper {
+    width: 960px;
+    font-family: 'Microsoft YaHei';
+    margin: 0 auto;
+}
+.log_logo {
+    height: 80px;
+    width: 220px;
+}
+.left {
+    float: left;
+}
+.log_head {
+    height: 80px;
+    overflow: hidden;
+}
+.log_logo a {
+    position: relative;
+    width: 400px;
+    height: 80px;
+    display: block;
+    padding: 11px 0;
+}
+.log_logo span {
+    text-decoration: none;
+    color: #4FB99F;
+    font-weight: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 23px;
+    left: 140px;
+    line-height: 36px;
+    border-left: 2px solid #d6d6d6;
+    padding-left: 40px;
+}
+.login_wrap {
+    background: #fff;
+    border: solid 8px #f0f0f0;
+    min-height: 340px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+.zhuce-tab {
+    cursor: pointer;
+    font-size: 16px;
+    color: #999;
+    background: #eee;
+    display: inline-block;
+    font-family: 'Microsoft YaHei';
+}
+.zhuce-tab .xz {
+    border-top: solid 2px #4FB99F;
+    font-size: 16px;
+    color: #666;
+    background: #fff;
+}
+.zhuce-tab ul li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-right: solid 1px #ddd;
+}
+.regtip {
+    margin: 10px 10px 0 0;
+    text-shadow: 0 1px 0 #fff;
+}
+.right {
+    float: right;
+}
+.regtip a {
+    color: #fff;
+    margin-left: 5px;
+    padding: 2px;
+    text-shadow: none;
+}
+.orange-bg {
+    background-color: #f70;
+}
+.wrapper {
+    font-family: 'Microsoft YaHei';
+}
+.reg dl {
+    line-height: 30px;
+    margin-top: 15px;
+    min-height: 30px;
+}
+.reg dl dt {
+    color: #999;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    width: 100px;
+}
+.reg dl dt i {
+    color: #e73828;
+}
+.reg dl dd {
+    margin-left: 110px;
+}
+.reg dl dd input[type="text"], .reg dl dd input[type="password"] {
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 2px #f3f3f3;
+    height: 28px;
+    line-height: 28px\9;
+    text-indent: 5px;
+    width: 240px;
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+.reg dl dd em {
+    color: #999;
+    margin-left: 10px;
+}
+address, caption, cite, code, dfn, em, th, var, i {
+    font-style: normal;
+    font-weight: normal;
+}
+#codedl {
+    display: none;
+}
+.reg dl {
+    line-height: 30px;
+    margin-top: 15px;
+    min-height: 30px;
+}
+.btn {
+    margin-left: 10px;
+    border: 1px solid #dddddd;
+    padding: 0;
+    width: 106px;
+    height: 30px;
+    background: #f4f4f4;
+    margin-top: 0;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+.reg dl dd button {
+    background: #4FB99F;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    width: 160px;
+}

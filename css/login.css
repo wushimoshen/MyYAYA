@@ -1,0 +1,160 @@
+body{
+    background: #f6f6f6;
+}
+.wrapper {
+    width: 960px;
+    font-family: 'Microsoft YaHei';
+    margin: 0 auto;
+}
+.log_head {
+    height: 80px;
+    overflow: hidden;
+}
+.log_logo {
+    height: 80px;
+    width: 220px;
+}
+.left {
+    float: left;
+}
+.log_logo a {
+    position: relative;
+    width: 400px;
+    height: 80px;
+    display: block;
+    padding: 11px 0;
+}
+.log_logo span {
+    text-decoration: none;
+    color: #4FB99F;
+    font-weight: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 23px;
+    left: 140px;
+    line-height: 36px;
+    border-left: 2px solid #d6d6d6;
+    padding-left: 40px;
+}
+.login_wrap {
+    margin-bottom: 20px;
+}
+.log_ad {
+    width: 600px;
+    float: left;
+    overflow: hidden;
+    height: 370px;
+}
+.login_border {
+    float: right;
+    background: rgba(255,255,255,.6);
+}
+.login {
+    width: 330px;
+    min-height: 334px;
+    padding-bottom: 20px;
+    background: #fff;
+    position: relative;
+}
+.login ul {
+    overflow: hidden;
+    width: 310px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    height: 46px;
+}
+.login ul li {
+    float: left;
+    width: 60px;
+    text-align: center;
+    height: 45px;
+    margin: 0 10px;
+    line-height: 46px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+.login-on {
+    color: #4FB99F;
+    font-size: 14px;
+    border-bottom: 1px solid #4FB99F !important;
+}
+.login-body {
+    padding: 5px 30px 0;
+    overflow: hidden;
+}
+.login dl {
+    margin-top: 20px;
+}
+#txtUser {
+    background: url(../img/iconfont-yonghu.png) no-repeat 7px center;
+        background-size: auto;
+    background-size: 20px;
+}
+.login dl dd input[type="text"], .login dl dd input[type="password"] {
+    border: solid 1px #d6d6d6;
+    height: 34px;
+    line-height: 28px\9;
+    width: 233px;
+    padding-left: 35px;
+    border-radius: 3px;
+}
+#Userpwd {
+    background: url(../img/iconfont-psw.png) no-repeat 7px center;
+        background-size: auto;
+    background-size: 20px;
+}
+.right {
+    float: right;
+}
+.remember input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.login input {
+    font-family: 'Microsoft YaHei';
+    outline: none;
+}
+.remember label {
+    color: #999;
+}
+.login button {
+    width: 270px;
+    border: 0;
+    background: #4FB99F;
+    border-radius: 3px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
+}
+.clear {
+    clear: both;
+}
+#phone {
+    background: url(../img/iconfont-shouji.png) no-repeat 6px center;
+        background-size: auto;
+    background-size: 22px;
+
+}
+#txtCode, #txtCode2 {
+    background: url(../img/iconfont-yanzhengma.png) no-repeat 6px center;
+        background-size: auto;
+    background-size: 22px;
+
+}
+#dynamicPWD {
+    background: url(../img/iconfont-duanxin.png) no-repeat 6px center;
+        background-size: auto;
+    background-size: 22px;
+}
+.btn_mfyzm {
+    width: 90px;
+    margin-left: 10px;
+    height: 36px;
+    background: #f0f0f0;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    cursor: pointer;
+}

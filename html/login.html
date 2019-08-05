@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="login_head">
+        <div class="log_head">
+            <h1 class="log_logo left">
+                <a href="/">
+                    <img src="../img/yaya.png" width="113" height="50">
+                    <span>欢迎登录</span>
+                </a>
+            </h1>
+        </div>
+    </div>
+    <div class="login_wrap"
+        style="min-height:420px; background:#fff url(https://img2.yaya.cn/newstatic/944/47a86aac72ed10.jpg) no-repeat center top; padding:40px 0;">
+        <div class="wrapper" id="login_body">
+            <div class="log_ad" style=>
+                <a href="https://www.yaya.cn/list/113-0-0-0-0-1.html"></a>
+            </div>
+            <div class="login_border" style="padding:8px;">
+                <!--普通登录-->
+                <div class="login" style="display: block;">
+                    <div style="position:absolute; right:30px; top:14px;"><a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html"
+                            target="_blank">账号注册<em
+                                style="width:16px; height:16px; background:#999; float:right; color:#fff; border-radius:100%; text-align:center; line-height:16px; margin:1px 0 0 5px;font-weight:bold;">></em></a>
+                    </div>
+                    <ul class="login-tab">
+                        <li class="login-on">普通登录</li>
+                        <li class="">手机登录</li>
+                    </ul>
+                    <div class="login-body">
+                        <div class="login-style" style="display: block;">
+                            <dl>
+                                <dd><input name="txtUser" type="text" id="txtUser" placeholder="用户名/邮箱/手机号"></dd>
+                            </dl>
+                            <dl>
+                                <dd><input type="password" id="Userpwd" onkeydown="enterHandler(event)"
+                                        placeholder="请输入您的密码"></dd>
+                            </dl>
+                            <dl id="logincode" style="display: none;">
+                                <dd><input type="text" id="txtCode" name="txtCode"
+                                        style="width: 133px; margin-right: 10px;" placeholder="验证码">
+                                        <img id="vCodeImg" src="" width="90" height="34" title="点击换一个"
+                                        style="vertical-align: middle; margin-top: -4px;"></dd>
+                            </dl>
+                            <div class="psword" style="margin-top:15px;"><a href="javascript:void(0);"
+                                     tabindex="-1" class="right" target="_blank">忘记密码?</a></div>
+
+                            <div class="remember">
+                                <input type="checkbox" id="issave" checked=""><label for="issave">下次自动登录</label>
+                            </div>
+
+
+                            <div class="tishi" style="display: none;"></div>
+                            <button  id="logbtn" style="outline:none">登 录</button>
+                        </div>
+                        <div class="login-style" style="display: none;">
+                            <dl>
+                                <dd><input name="phone" type="text" id="phone" placeholder="您的手机号码"></dd>
+                            </dl>
+                            <dl id="yz-code" style="">
+                                <dd><input type="text" id="txtCode2" name="txtCode2"
+                                        style="width: 133px; margin-right: 10px;" placeholder="验证码"><img id="Img1"
+                                        src="" width="90" height="34" title="点击换一个"
+                                        style="vertical-align: middle; margin-top: -4px;"></dd>
+                            </dl>
+                            <dl>
+                                <dd><input type="text" id="dynamicPWD" onkeydown="enterHandler(event)"
+                                        style="width: 133px;" placeholder="短信验证码"><input type="button" id="btn"
+                                        class="btn_mfyzm" value="获取动态密码" onclick="Sendpwd(this)"></dd>
+                            </dl>
+
+                            <div class="remember">
+                                <input type="checkbox" id="issave1" checked=""><label for="issave1">下次自动登录</label>
+                            </div>
+
+                            <div class="tishi" style="display: none;"></div>
+                            <button type="button" id="dynamicLogon" style="outline:none">登 录</button>
+                        </div>
+                    </div>
+                </div>
+                <!--APP扫码登录-->
+                <div class="login" style="display: none;">
+                    <i class="qiehuan" style="background-position:left bottom;"></i>
+                    <div class="app_login">
+                        <h1><i>-</i>登录失败，请刷新二维码后重试！</h1>
+                        <h2>使用丫丫APP&nbsp;&nbsp;扫码安全登录</h2>
+                    </div>
+                    <div class="app_code">
+                        <img id="appLoginCode" src="">
+                    </div>
+                    <div class="shuaxin">
+                        <span>刷新二维码</span>
+                        <p><a href="www.yaya.cn/help/9055.html" target="_blank">查看使用帮助</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+    <script>
+        // 登录切换
+        $(".login-tab").on("click","li",function(){
+            $(this).addClass("login-on").siblings().removeClass("login-on");
+            $(".login-style").eq($(this).index()).show().siblings().hide();
+        })
+
+    </script>
+</body>
+
+</html>
