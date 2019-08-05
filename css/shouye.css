@@ -734,3 +734,6 @@ textarea {
     width: 200px;
     height: 460px;
 }
+img{
+    vertical-align: middle;
+}

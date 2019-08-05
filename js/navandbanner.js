@@ -33,8 +33,8 @@ class MarganList {
     // 导航栏
     creatShang(){
        return `
-        
-            <a href="/">首页</a>
+           
+            <a href="http://127.0.0.1/MYyaya/MyYAYA/html/shouye.html">首页</a>
             <div id="div-bdxh" style="display: none">
                 <a href="/shoplist/2-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-1.html">本店现货<i style="display: block; width: 28px; height: 14px; line-height: 12px; text-align: center; background: #4FB99F; font-size: 12px; position: absolute; top: -5px; right: 5px; text-shadow: none; color: #fff;">hot<s style="position: absolute; left: 0; bottom: -4px; width: 0; height: 0; border-top: 5px solid #4FB99F; border-right: 5px solid transparent;"></s></i></a>
             </div>
@@ -99,45 +99,13 @@ class MarganList {
             html += `<div>
                 <h4>${ele.title}</h4>
                 <p>
-                    ${ele.list.map(ele=> `<a href="">${ele}</a>`).join("")}
+                    ${ele.list.map(ele=> `<a href="http://127.0.0.1/MYyaya/MyYAYA/html/list.html">${ele}</a>`).join("")}
                 </p>
             </div>`
         })
         return html;
     }
-    // creatBanner() {
-    //     // 创建轮播图放图片的标签
-    //     let sliderBox = document.createElement("ul");
-    //     sliderBox.className = "slider-box";
-    //     let html = this.data3.map((ele) => {
-    //         return `<li class="slider-box-item"><img src=${ele}></li>`
-    //     }).join("");
-    //     sliderBox.innerHTML = html;
-    //     // 创建轮播图放按钮的标签
-    //     let sliderControl = document.createElement("div");
-    //     sliderControl.className = "slider-control";
-    //     sliderControl.innerHTML = `
-    //      <span class="prev">&lt;</span>
-    //      <span class="next">&gt;</span>
-    // `
-    //     // 创建轮播图放小图标的标签
-    //     let sliderNav = document.createElement("ol");
-    //     sliderNav.className = "slider-nav";
-    //     let html2 = this.data3.map((ele, index) => {
-    //         return `<li class="slider-nav-item">${index + 1}</li>`
-    //     }).join("");
-    //     sliderNav.innerHTML = html2;
-    //     this.oSlider.appendChild(sliderBox)
-    //     this.oSlider.appendChild(sliderControl)
-    //     this.oSlider.appendChild(sliderNav)
-
-    //     // this.slider = slider;
-    //     // 需要用到就先存起来
-    //     this.sliderBox = sliderBox;
-    //     this.sliderNav = sliderNav;
-    //     this.sliderControl = sliderControl;
-    // }
-
+   
     // 滑入滑出事件函数
     addmouseEnterWithLeave() {
             $(".nav-li").mouseenter(function(){
@@ -152,95 +120,18 @@ class MarganList {
             })
     }
 
-    // 封装一个轮播图下一张的方法
-    // next() {
-    //     // 拿到标签
-    //     this.index++;
-    //     /*临界值检查*/
-    //     if (this.index > (this.sliderBoxItemCount - 1)) {
-    //         this.index = 0;
-    //     }
-    //     this.sliderBox.style.left = -(this.index) * 680 + "px";
-    //     // $(".slider-box").css(`left`,`-${this.index*680+"px"}`)
-    //     this.switchSlider(this.index);
-    // }
-    // // 上一张的方法
-    // prev() {
-    //     this.index--;
-    //     /*临界值检查*/
-    //     if (this.index < 0) {
-    //         this.index = this.sliderBoxItemCount - 1;
-    //     }
-    //     this.sliderBox.style.left = -this.index * 680 + "px";
-    //     this.switchSlider(this.index);
-    // }
-    // // 自动播放
-    // autoPlayer() {
-    //     this.timer = setInterval(() => {
-    //         this.next();
-    //     }, 2000);
-    // }
-    // // 鼠标滑过的时候定时器停止
-    // addMouseHandle() {
-    //     this.oSlider.onmouseenter = () => {
-    //         clearInterval(this.timer);
-    //         this.sliderControl.style.display = "block";
-    //         // $(this).css("display","block");
-    //     }
-    //     //    离开的时候启动
-    //     this.oSlider.onmouseleave = () => {
-    //         this.autoPlayer();
-    //         this.sliderControl.style.display = "none";
-    //     }
-    // }
-    // // 点击左右按钮的时候切换图片
-    // addEventHandle() {
-    //     this.sliderControl.onclick = (e) => {
-    //         if (e.target.className == "prev") {
-    //             this.prev();
-    //         }
-    //         if (e.target.className == "next") {
-    //             this.next();
-    //         }
-    //     }
-    // }
-    // // 小图标根据图片的切换而切换背景颜色
-    // switchSlider(index) {
-    //     $(".slider-nav-item").eq(index).addClass("active").siblings().removeClass("active");
-    // }
-    // // 滑入小图标切换对应的图片
-    // addMouseHandleWithItem() {
-    //     Array.from(this.sliderNav.children).forEach((ele, index) => {
-    //         ele.onmouseenter = () => {
-    //             this.index = index;
-    //             this.sliderBox.style.left = -this.index * 680 + "px";
-    //             this.switchSlider(this.index);
-    //         }
-    //     })
-    //     // $(".slider-nav-item").mouseenter(function(){
-    //     //     $(".slider-box").css(`left`,`-${this.index*680+"px"}`);
-    //     //     console.log("aaaaaaaaa");
-            
-    //     // })
-        
-    // }
+ 
     // 初始化方法
     init() {
         this.creatHtml();
         this.creatNav();
         this.addmouseEnterWithLeave();
-        // this.creatBanner();
-        // this.autoPlayer();
-        // this.addMouseHandle();
-        // this.addEventHandle();
-        // this.switchSlider(0);
-        // this.addMouseHandleWithItem();
+
     }
 }
 // 实例化
 
-// let list = new MarganList(data);
-// list.init();
+
 
                             
 /* <a href="https://www.yaya.cn/product/57646.html" title="iPhone 8 Plus" style="border-top: 0px none;">

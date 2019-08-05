@@ -67,7 +67,7 @@ textarea {
 
 img {
     border: 0;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
