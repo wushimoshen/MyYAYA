@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <!-- <link rel="stylesheet" href="../css/louceng.css"> -->
     <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/cookie.js"></script>
     <script src="../js/navandbanner.js"></script>
     <script src="../js/banner.js"></script>
     <script src="../js/main.js"></script>
@@ -41,8 +42,9 @@
                     </div>
                 </div>
                 <div class="top-login left">
-                    <p>Hi，欢迎来丫丫！<a href="http://127.0.0.1/MYyaya/MyYAYA/html/login.html" rel="nofollow">登录</a><a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html"
+                    <p id="loginorno">Hi，欢迎来丫丫！<a href="http://127.0.0.1/MYyaya/MyYAYA/html/login.html" rel="nofollow">登录</a><a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html"
                             rel="nofollow">免费注册</a></p>
+                    
                 </div>
                 <div class="top-menu right">
                     <a href="/mycenter/" class="top-user" rel="nofollow">个人中心<i class="triangle-down"></i>
@@ -147,7 +149,7 @@
                     <dl class="search-history">
                         <dt>搜索历史：</dt>
                         <dd class="search-history-list"><a href="">iphone</a><a href="">6s</a></dd>
-                        <dd><a href="javascript:;" onclick="clearHistory()"
+                        <dd><a href="javascript:;"
                                 style="color: #3caaff; border-bottom: 0;">清空历史记录</a></dd>
                     </dl>
                     <div class="search-guess"></div>
@@ -195,9 +197,6 @@
             </div>
             <!-- 活动推荐 -->
             <div id="go_topic" class="diy-topic wrapper monitor">
-
-
-
             </div>
             <!-- 手机电脑数码 -->
             <div id="gou_troika" class="diy-troika wrapper monitor">
@@ -526,6 +525,23 @@
 <script>
     // 顶部滑过功能
     $(function () {
+        // 检查是否保存账号信息
+        if(Cookie.getItem("username")&&Cookie.getItem("password")){
+            $("#loginorno").html(`
+            Hi，<a href="/mycenter/" title="进入个人中心" style="margin:0;">${Cookie.getItem("username")}</a>           
+            <a href="/myCenter/myLevel.aspx" target="_blank" style="margin:0;" title="会员等级">
+            <i class="icon user-level user-level-0"></i></a>  
+            <a id="jifen_a" href="/vipclub/" title="我的积分"><i class="icon user-point"></i>0</a>                                   
+            <a href="/mycenter/mymsg.aspx" class="user-msg" title="消息"><i class="icon"></i></a>          
+            <a id="tuichu">退出</a>
+            `)
+        }
+        // 退出功能
+        $("#tuichu").click(function(){
+            Cookie.clear();
+            $("#loginorno").html(`Hi，欢迎来丫丫！<a href="http://127.0.0.1/MYyaya/MyYAYA/html/login.html" rel="nofollow">登录</a><a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html"
+                            rel="nofollow">免费注册</a>`)
+        })
         // 城市
         $(".top-weizhi").hover(function () {
             $(this).children("a").css("color", "#196");

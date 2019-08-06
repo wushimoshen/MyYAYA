@@ -22,7 +22,22 @@ $(function () {
 
         })
     ]).then(function () {
-
+        if(Cookie.getItem("username")&&Cookie.getItem("password")){
+            $("#loginorno").html(`
+            Hi，<a href="/mycenter/" title="进入个人中心" style="margin:0;">${Cookie.getItem("username")}</a>           
+            <a href="/myCenter/myLevel.aspx" target="_blank" style="margin:0;" title="会员等级">
+            <i class="icon user-level user-level-0"></i></a>  
+            <a id="jifen_a" href="/vipclub/" title="我的积分"><i class="icon user-point"></i>0</a>                                   
+            <a href="/mycenter/mymsg.aspx" class="user-msg" title="消息"><i class="icon"></i></a>          
+            <a id="tuichu">退出</a>
+            `)
+        }
+        // 退出功能
+        $("#tuichu").click(function(){
+            Cookie.clear();
+            $("#loginorno").html(`Hi，欢迎来丫丫！<a href="http://127.0.0.1/MYyaya/MyYAYA/html/login.html" rel="nofollow">登录</a><a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html"
+                            rel="nofollow">免费注册</a>`)
+        })
         $(".top-weizhi").hover(function () {
             $(this).children("a").css("color", "#196");
             $(".city-wrap").css("display", "block")

@@ -155,3 +155,41 @@ address, caption, cite, code, dfn, em, th, var, i {
     height: 40px;
     width: 160px;
 }
+/* <div class="layui-layer layui-layer-tips  layer-anim" id="layui-layer41" type="tips" times="41" showtime="3000" contype="object" style="z-index: 19891055; position: absolute; left: 564.5px; top: 149.5px;"><div id="" class="layui-layer-content">用户名应为4-32位，字母或数字！<i class="layui-layer-TipsG layui-layer-TipsR"></i></div><span class="layui-layer-setwin"></span></div> */
+/* <div class="layui-layer layui-layer-tips  layer-anim" id="layui-layer55" type="tips" times="55" showtime="3000" contype="object" style="z-index: 19891069; position: absolute; left: 564.5px; top: 195px;"><div id="" class="layui-layer-content">密码最少６位哦！<i class="layui-layer-TipsG layui-layer-TipsR"></i></div><span class="layui-layer-setwin"></span></div> */
+
+
+
+.layui-layer-tips {
+    color:#fff;
+    background: 0 0;
+    box-shadow: none;
+    border: none;
+    display: none;
+
+}
+.layui-layer-content{
+    position: relative;
+    line-height: 22px;
+    min-width: 12px;
+    padding:5px 10px;
+    font-size:12px;
+    border-radius:3px;
+    box-shadow:1px 1px 3px rgba(0,0,0,.3);
+    background: #f90;
+}
+.layui-layer-TipsR{
+    left: -8px;
+    top:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#f90;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width:8px;
+    border-style:dashed;
+    border-color:transparent;
+}
+body .form-group-error{
+    display: block;
+}

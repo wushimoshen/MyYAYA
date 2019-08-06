@@ -1,41 +1,51 @@
 #go_topic {
     margin-top: 20px;
 }
+
 /* 产品推荐 */
 .diy-topic .diy-list li {
     float: left;
 }
+
 .margin-right {
     margin-right: 10px;
 }
+
 .overflow-hide {
     overflow: hidden;
 }
+
 .diy-topic .diy-list li:last-child {
     margin-right: 0;
 }
+
 /* 三两宝马 */
 .diy-troika {
     overflow: hidden;
     margin-top: 20px;
 }
+
 .diy-troika .troika-list {
     float: left;
     width: 393px;
     background: #fff;
 }
+
 .margin-right {
     margin-right: 10px;
 }
+
 .diy-troika .troika-body {
     padding: 10px;
     overflow: hidden;
 }
+
 .diy-troika .troika-body .right a {
 
     border-bottom: 1px dashed #d6d6d6;
 
 }
+
 .diy-troika .troika-body a {
 
     display: block;
@@ -45,12 +55,14 @@
     height: 126px;
 
 }
+
 .anim-left {
 
     overflow: hidden;
     position: relative;
 
 }
+
 .diy-troika .troika-body a img {
 
     position: absolute;
@@ -58,13 +70,15 @@
     bottom: 0;
 
 }
+
 .anim-left img {
     -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
     transition-duration: .3s;
     vertical-align: top;
-    
+
 }
+
 .diy-tip {
 
     position: absolute;
@@ -75,6 +89,7 @@
     width: 170px;
 
 }
+
 .diy-tip h3 {
 
     font-size: 16px;
@@ -82,11 +97,13 @@
     font-weight: normal;
 
 }
+
 .diy-troika .troika-body .left {
 
     border-right: 1px dashed #d6d6d6;
 
 }
+
 .diy-troika .troika-body .big-img {
 
     border-bottom: 1px dashed #d6d6d6;
@@ -94,20 +111,25 @@
     height: 253px;
 
 }
+
 /* 售后服务 */
 .diy-shouhou {
     margin-top: 20px;
 }
+
 .diy-shouhou a {
     display: block;
 }
+
 .diy-shouhou a img {
     vertical-align: top;
     /* position: absolute; */
 }
-.sh-tip .get-src{
+
+.sh-tip .get-src {
     position: absolute;
 }
+
 .diy-shouhou .sh-tip {
     position: absolute;
     right: 0;
@@ -115,11 +137,13 @@
     width: 375px;
     height: 160px;
 }
+
 /* 更多好货 */
 .goodCommodity ul {
     width: 1215px;
     overflow: hidden;
 }
+
 .goodCommodity li {
     width: 202px;
     height: 280px;
@@ -130,26 +154,32 @@
     background: #fff;
     line-height: 20px;
 }
+
 .anim-top {
     -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
     transition-duration: .3s;
 }
+
 .goodCommodity li a {
     display: block;
     text-decoration: none;
     color: #555;
 }
+
 .goodCommodity li span {
     display: block;
 }
+
 .goodCommodity li img {
     vertical-align: top;
     width: 100%;
 }
+
 .font14 {
     font-size: 14px;
 }
+
 .row2 {
     word-break: break-all;
     display: -webkit-box;
@@ -158,29 +188,38 @@
     word-break: break-all;
     overflow: hidden;
 }
+
 .margin-top {
     margin-top: 10px;
 }
+
 .goodCommodity li p {
     font-size: 14px;
     line-height: 30px;
 }
-.red, a.red {
+
+.red,
+a.red {
     color: #e73828;
 }
+
 .goodCommodity li:hover {
     box-shadow: 0 0 20px #ccc;
 }
+
 .anim-top:hover {
     -webkit-transform: translateY(-3px);
     -o-transform: translateY(-3px);
     transform: translateY(-3px);
 }
+
 .loadmore {
     text-align: center;
     padding-top: 10px;
 }
-.button::after, a.button::after {
+
+.button::after,
+a.button::after {
     content: '';
     width: 0;
     height: 0;
@@ -188,8 +227,9 @@
     left: 50%;
     top: 50%;
     border-radius: 100%;
-    background: rgba(255,255,255,.4);
+    background: rgba(255, 255, 255, .4);
 }
+
 .loadmore a {
     width: 200px;
     height: 40px;
@@ -200,7 +240,9 @@
     border: 1px solid #dfdfdf;
     color: #999;
 }
-.button, a.button {
+
+.button,
+a.button {
     text-decoration: none;
     background-color: #f3f3f3;
     border: solid 1px #bbb;
@@ -216,12 +258,14 @@
     vertical-align: middle;
 }
 
-.button:hover::after, a.button:hover::after {
+.button:hover::after,
+a.button:hover::after {
     width: 5px;
     height: 5px;
     -webkit-animation: buttonHoverAni 2.5s linear .1s;
     animation: buttonHoverAni 2.5s linear .1s;
 }
+
 .loadmore a:hover {
     background: #e73828;
     color: #fff;
@@ -236,6 +280,7 @@
     display: none;
     z-index: 9;
 }
+
 .diy-elevator a {
     width: 28px;
     height: 28px;
@@ -250,9 +295,12 @@
     cursor: pointer;
     overflow: hidden;
 }
-.diy-elevator a:hover, .diy-elevator a.active {
+
+.diy-elevator a:hover,
+.diy-elevator a.active {
     background: #333;
 }
+
 .diy-elevator a:last-child {
     background: #4FB99F;
 }
@@ -262,7 +310,7 @@
 
 
 /* 楼梯层 */
-.title{
+.title {
     margin: 20px auto;
 }
 
@@ -271,6 +319,7 @@
     margin-bottom: 20px;
     height: auto;
 }
+
 /* 主要部分 */
 /* .main-main{
     width: 100%;
@@ -280,18 +329,22 @@
     padding: 10px;
     overflow: hidden;
 }
-.main-main .left-ad{
+
+.main-main .left-ad {
     float: left;
     width: 190px;
 }
-.main-main .right-ad{
+
+.main-main .right-ad {
     float: right;
     width: 190px;
 }
-.main-brank{
+
+.main-brank {
     width: 100%;
 }
-.brank-list{
+
+.brank-list {
     height: 46px;
     line-height: 46px;
     /* position: absolute; */
@@ -301,6 +354,7 @@
     box-sizing: border-box;
     background: #734e8b;
 }
+
 .brank-list span {
     font-size: 16px;
     margin-right: 20px;
@@ -309,6 +363,7 @@
 .left {
     float: left;
 }
+
 .brank-list a {
     color: black;
     float: left;
@@ -317,20 +372,25 @@
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     margin: 16px 0 0 15px;
     padding-right: 15px;
-} 
+}
+
 /* 左侧火热销售 */
-.diy-floor a{
+.diy-floor a {
     display: block;
 }
-.top-ad{
+
+.top-ad {
     position: relative;
     overflow: hidden;
 }
-.top-ad img,.anim-left img{
+
+.top-ad img,
+.anim-left img {
     transition-duration: .3s;
     vertical-align: top;
 }
-.div-tip{
+
+.div-tip {
     position: absolute;
     left: 0;
     top: 0;
@@ -338,9 +398,11 @@
     line-height: 18px;
     width: 170px;
 }
-.div-tip p{
+
+.div-tip p {
     font-size: 12px;
 }
+
 .diy-floor .bottom-ad {
     position: relative;
     display: block;
@@ -349,14 +411,17 @@
     text-align: center;
     background: #734e8b;
 }
+
 .bottom-ad dl dd span {
     width: 70px;
     display: inline-block;
     line-height: 20px;
 }
+
 em {
     font-style: italic;
 }
+
 .diy-floor .bottom-ad:before {
     content: '';
     border-top: 6px solid #444;
@@ -365,6 +430,7 @@ em {
     top: 0;
     position: absolute;
 }
+
 .diy-floor .text-ad {
     line-height: 34px;
     position: absolute;
@@ -377,9 +443,11 @@ em {
     color: #fff;
     background: #734e8b;
 }
- .bottom-ad dl {
+
+.bottom-ad dl {
     padding: 30px 20px;
 }
+
 /* 中间列表栏 */
 .diy-floor .shop-list {
     float: left;
@@ -387,22 +455,26 @@ em {
     width: 780px;
     height: 440px;
 }
+
 .diy-floor .shop-list ul {
     overflow: hidden;
     height: 439px;
 }
-.shop-list ul li{
+
+.shop-list ul li {
     float: left;
     width: 25%;
     height: 220px;
 }
-.shop-list ul li a{
-border-right: 1px dashed #d6d6d6;
-border-bottom: 1px dashed #d6d6d6;
-position: relative;
-display: block;
-height: 220px;
+
+.shop-list ul li a {
+    border-right: 1px dashed #d6d6d6;
+    border-bottom: 1px dashed #d6d6d6;
+    position: relative;
+    display: block;
+    height: 220px;
 }
+
 .diy-floor .shop-list li img {
     position: absolute;
     width: 120px;
@@ -410,18 +482,22 @@ height: 220px;
     right: 0;
     bottom: 0;
 }
+
 .div-tip h3 {
     font-size: 16px;
     padding-bottom: 8px;
     font-weight: normal;
 }
-.div-tip p{
+
+.div-tip p {
     color: #555;
 }
+
 /* 右边栏 */
 .diy-floor .right-ad a {
     height: 110px;
 }
+
 .diy-floor .right-ad a img {
     position: absolute;
     width: 80px;
@@ -429,11 +505,13 @@ height: 220px;
     right: 0;
     bottom: 0;
 }
+
 .top-ad img {
     -webkit-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
 }
+
 .top-ad:hover img {
     -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -458,11 +536,13 @@ height: 220px;
     position: relative;
     z-index: 2;
 }
+
 .promise {
     height: 110px;
     width: 1200px;
     margin: 0 auto;
 }
+
 .promise a {
     width: 220px;
     float: left;
@@ -470,37 +550,47 @@ height: 220px;
     margin-left: 20px;
     text-decoration: none;
 }
+
 .promise dl {
     width: 220px;
 }
+
 .promise dl dt.p0 {
     background-position: 0 -232px;
 }
+
 .promise dl dt.p1 {
     background-position: -50px -232px;
 }
+
 .promise dl dt {
     width: 50px;
     height: 50px;
     float: left;
 }
+
 .promise dl dd {
     margin-left: 60px;
     font-family: 'Microsoft YaHei';
 }
+
 .promise dl dd h4 {
     font-size: 20px;
     font-weight: normal;
 }
+
 .promise dl dd p {
     color: #9c9c9c;
 }
+
 .promise dl dt.p2 {
     background-position: -100px -232px;
 }
+
 .promise dl dt.p3 {
     background-position: -150px -232px;
 }
+
 .promise dl dt.p4 {
     background-position: 0 -282px;
 }
@@ -514,35 +604,42 @@ height: 220px;
     border-top: solid 1px #eee;
     height: 160px;
 }
+
 .foot-help dl {
     float: left;
     height: 110px;
     width: 180px;
     padding-top: 30px;
 }
+
 .foot-help dl dt {
     font-size: 14px;
     padding-left: 8px;
 }
+
 .foot-help dl dd {
     padding-left: 10px;
     margin-top: 10px;
 }
+
 .foot-help dl dd a {
     display: block;
     line-height: 25px;
     color: #9c9c9c;
 }
+
 .foot-help dl.foot-sns {
     width: 250px;
     float: right;
 }
+
 .foot-help dl {
     float: left;
     height: 110px;
     width: 180px;
     padding-top: 30px;
 }
+
 .foot-help dl.foot-sns dt {
     width: 70px;
     height: 70px;
@@ -550,42 +647,51 @@ height: 220px;
     background-position: -130px -282px;
     padding: 0;
 }
+
 .foot-help dl.foot-sns dd {
     padding: 0;
     margin: 0 0 0 75px;
 }
+
 .foot-help dl.foot-sns dd h4 {
     font-weight: normal;
     font-size: 14px;
 }
+
 .foot-help dl.foot-sns dd p {
     margin-top: 5px;
     line-height: 20px;
     color: #999;
 }
+
 .foot_nav {
     height: 50px;
     line-height: 50px;
     text-shadow: 0 1px 0 #fff;
     text-align: center;
 }
+
 .foot_nav i {
     margin: 0 15px;
     color: #ccc;
 }
+
 .copy {
     padding-bottom: 15px;
     text-align: center;
 }
+
 .copy p {
     line-height: 25px;
     color: #999;
     text-shadow: 0 1px 0 #fff;
 }
+
 .bot-link {
     text-align: center;
     height: 60px;
 }
+
 .bot-link a {
     display: inline-block;
     width: 130px;
@@ -596,10 +702,12 @@ height: 220px;
     margin: 0 5px;
     vertical-align: middle;
 }
-.bot-link a:nth-child(3){
+
+.bot-link a:nth-child(3) {
     background-position: 0 -100px;
 }
-.bot-link a:nth-child(4){
+
+.bot-link a:nth-child(4) {
     background-position: 0 -50px;
 }
 
@@ -614,6 +722,7 @@ height: 220px;
     z-index: 98;
     transition: width .3s ease;
 }
+
 .tool-bar-menu {
     position: absolute;
     top: 50%;
@@ -621,37 +730,48 @@ height: 220px;
     height: 250px;
     margin-top: -125px;
 }
-.tool-bar-menu a, .scroll-to-top {
+
+.tool-bar-menu a,
+.scroll-to-top {
     width: 25px;
     height: 25px;
     display: block;
     padding: 5px;
     position: relative;
 }
+
 .tool-bar-menu a.tool-cart i {
     background-position: -25px -332px;
 }
+
 .tool-bar-menu a.tool-shop i {
     background-position: -75px -332px;
 }
+
 .tool-bar-menu a.tool-custom i {
     background-position: -100px -332px;
 }
+
 .tool-bar-menu a.tool-complain i {
     background-position: 0 -357px;
 }
+
 .tool-bar-menu a.tool-wechat i {
     background-position: -25px -357px;
 }
+
 .tool-bar-menu a.tool-vs i {
     background-position: -100px -357px;
 }
+
 .tool-bar-menu a i {
     display: block;
     width: 25px;
     height: 25px;
 }
-.tool-bar-menu a span, .scroll-to-top span {
+
+.tool-bar-menu a span,
+.scroll-to-top span {
     display: block;
     visibility: hidden;
     position: absolute;
@@ -666,7 +786,9 @@ height: 220px;
     transition: left .2s ease;
     -webkit-transition: left .2s ease;
 }
-.tool-bar-menu a span em, .scroll-to-top span em {
+
+.tool-bar-menu a span em,
+.scroll-to-top span em {
     border-top: 5px solid transparent;
     border-left: 5px solid #419c86;
     border-bottom: 5px solid transparent;
@@ -675,30 +797,61 @@ height: 220px;
     right: -5px;
     top: 13px;
 }
+
 .scroll-to-top {
     position: absolute;
     bottom: 0;
     left: 0;
     display: block;
 }
+
 .scroll-to-top i {
     background-position: 0 -332px;
     display: block;
     width: 25px;
     height: 25px;
 }
-.tool-bar-menu a:hover, .scroll-to-top:hover {
+
+.tool-bar-menu a:hover,
+.scroll-to-top:hover {
     overflow: visible;
     background: #4FB99F;
     text-align: center;
     text-decoration: none;
 }
-.tool-bar-menu a:hover span, .scroll-to-top:hover span {
+
+.tool-bar-menu a:hover span,
+.scroll-to-top:hover span {
     left: -70px;
     visibility: visible;
 }
+
 .tool-bar-menu a.tool-wechat span {
     left: -100px;
     width: 100px;
     height: 100px;
+}
+
+.top-login a i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin: 0 3px;
+    position: relative;
+    bottom: 1px;
+}
+
+.user-level-0 {
+    width: 16px !important;
+    height: 16px !important;
+    background-image: url(../iconfont/top-icon-new.png);
+    background-position: 0 0;
+    background-size: 98px 14px;
+}
+.top-login a i.user-point {
+    background-position: 0 -18px;
+}
+.top-login a.user-msg i {
+    background-position: -18px -18px;
 }

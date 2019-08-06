@@ -57,20 +57,17 @@ class MarganNav {
        let html= `<div class="user-login">
         <dl>
             <dt><a href="/myCenter/" target="_blank"><img id="userPic" src="../img/empty.png"></a></dt>
-            <dd id="userInfo"><p class="orange">丫丫网欢迎您～</p><a href="/acount/login.aspx">登录</a>&nbsp;<a href="/acount/reg.aspx">注册</a></dd>
+            <dd id="userInfo"><p class="orange">丫丫网欢迎您～</p><a href="http://127.0.0.1/MYyaya/MyYAYA/html/login.html">登录</a>&nbsp;<a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html">注册</a></dd>
         </dl>
         <div style="margin:6px 0 0 6px;" class="login-text">欢迎回家！您可登录 <a href="/vipclub/" target="_blank" class="main-color">会员俱乐部</a></div>
     </div>
     <div class="notice">
         <h3 class="side_title side-tab"><a href="/news/" target="_blank">丫丫头条</a><span class="change-icon" style="display: block;"><a href="/news/" target="_blank" style="margin-right: 0; font-size: 12px;">更多 &gt;</a></span></h3>
         <ul>
-            
                     <li><a href="/news/13898.html" title="【丫粉的节日】丫丫会员同盟会 积分当钱花 不换就清零"><i>[资讯]&nbsp;</i>【丫粉的节日】丫丫会员同盟会 ...</a></li>
                 
                     <li><a href="/news/14239.html" title="【新店开业】庆丫丫网关上店开业活动圆满成功！"><i>[资讯]&nbsp;</i>【新店开业】庆丫丫网关上店开业...</a></li>
-                
                     <li><a href="/news/14122.html" title="【618年中大促销】&nbsp;全场最高直降1749元&nbsp;再享千元换新补贴！"><i>[资讯]&nbsp;</i>【618年中大促销】&nbsp;全场最高直...</a></li>
-                
         </ul>
     </div>
     <div class="service">
