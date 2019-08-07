@@ -10,9 +10,9 @@
 
 		view : ".magnifier-view",//图片放大后承载容器
 
-		width : 400,//图片放大后承载容器宽度
+		width : 440,//图片放大后承载容器宽度
 
-		height : 400,//图片放大后承载容器高度
+		height : 440,//图片放大后承载容器高度
 
 		moveView : ".move-view",//跟随鼠标移动的容器
 
@@ -98,7 +98,7 @@
 			containerWidth = magnifier.width;
 			containerHeight = magnifier.height;
 
-			_this.thumbnail.find('>*').removeClass('active').eq(magnifier.index).addClass('active');
+			// _this.thumbnail.find('>*').removeClass('active').eq(magnifier.index).addClass('active');
 
 			function imgLoadEnd(){
 				
@@ -206,16 +206,16 @@
 			_this.imgMove($(this).index());
 		});
 
-		// thumbnailImg.on('click',function(){
+		thumbnailImg.on('mouseenter',function(){
 
-		// 	magnifier.index = $(this).index();
+			magnifier.index = $(this).index();
 
-		// 	//显示图片
-		// 	_this.eqImg();
+			//显示图片
+			_this.eqImg();
 
-		// 	//缩略图位置移动
-		// 	_this.imgMove(magnifier.index);
-		// });
+			//缩略图位置移动
+			_this.imgMove(magnifier.index);
+		});
 
 		_this.setIndex = function(n){
 

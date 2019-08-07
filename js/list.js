@@ -70,4 +70,18 @@ $(function () {
         orderType = $(this).index();
         getList(0);
     })
+    // 点击列表跳转至详情页面
+    $(".god_list").on("click","li",function(){
+        // 先保存到cookie
+        let thisSrc = $(this).find("img").eq(0).attr('src');
+        let thisDes = $(this).find(".god_title").eq(0).text();
+        let thisPrice = $(this).find(".price_now").eq(0).text();
+
+        Cookie.setItem("src",thisSrc);
+        Cookie.setItem("des",thisDes);
+        Cookie.setItem("price",thisPrice);
+
+        // 再跳转
+        window.location.href="http://127.0.0.1/MYyaya/MyYAYA/html/xiangqing.html";
+    })
 })
