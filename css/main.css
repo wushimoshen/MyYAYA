@@ -855,3 +855,11 @@ em {
 .top-login a.user-msg i {
     background-position: -18px -18px;
 }
+.navshang a {
+    font-size: 16px;
+    padding: 0 16px;
+    height: 45px;
+    display: block;
+    line-height: 45px;
+    white-space: nowrap;
+}
