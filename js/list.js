@@ -12,13 +12,15 @@ $(function () {
                 console.log(response);
                 // [2] 根据数据渲染页面
                 var res = response.data.map(ele => {
-                   return `<li data-id="${ele.gid}">
+                    console.log(ele.title);
+                    
+                   return `<li data-id="${ele.gid}" title="${ele.title}">
                     <a class="big_img" href="javascript:void(0)"><img src=${ele.img} alt=""></a>
                     <div class="all_small_img">
                         <a href=""><img class="samll_img" src=${ele.img} alt=""></a>
                     </div>
                     <a class="god_title">${ele.des}</a>
-                    <i class="price_now">${ele.price}</i>
+                    <i class="price_now">￥${ele.price}</i>
                     <p>已有<a href="">${ele.pingjia}</a>评价</p>
                     <div class="tool">
                             <a href="">对比</a>
@@ -65,7 +67,8 @@ $(function () {
         // console.log(this);
         
     })
-
+ 
+        
     $(".god_bar li a").click(function() {
         orderType = $(this).index();
         getList(0);
@@ -74,9 +77,9 @@ $(function () {
     $(".god_list").on("click","li",function(){
         // 先保存到cookie
         let thisSrc = $(this).find("img").eq(0).attr('src');
-        let thisDes = $(this).find(".god_title").eq(0).text();
-        let thisPrice = $(this).find(".price_now").eq(0).text();
-
+        let thisDes = $(this).attr("title");
+        let thisPrice = $(this).find(".price_now").eq(0).text().slice(1);
+        
         Cookie.setItem("src",thisSrc);
         Cookie.setItem("des",thisDes);
         Cookie.setItem("price",thisPrice);

@@ -42,9 +42,10 @@
                     </div>
                 </div>
                 <div class="top-login left">
-                    <p id="loginorno">Hi，欢迎来丫丫！<a href="http://127.0.0.1/MYyaya/MyYAYA/html/login.html" rel="nofollow">登录</a><a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html"
+                    <p id="loginorno">Hi，欢迎来丫丫！<a href="http://127.0.0.1/MYyaya/MyYAYA/html/login.html"
+                            rel="nofollow">登录</a><a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html"
                             rel="nofollow">免费注册</a></p>
-                    
+
                 </div>
                 <div class="top-menu right">
                     <a href="/mycenter/" class="top-user" rel="nofollow">个人中心<i class="triangle-down"></i>
@@ -149,8 +150,7 @@
                     <dl class="search-history">
                         <dt>搜索历史：</dt>
                         <dd class="search-history-list"><a href="">iphone</a><a href="">6s</a></dd>
-                        <dd><a href="javascript:;"
-                                style="color: #3caaff; border-bottom: 0;">清空历史记录</a></dd>
+                        <dd><a href="javascript:;" style="color: #3caaff; border-bottom: 0;">清空历史记录</a></dd>
                     </dl>
                     <div class="search-guess"></div>
                     <p> 热门搜索：
@@ -164,7 +164,7 @@
                 </div>
                 <div class="header-qrcode right">
                     <div class="header-cart">
-                        <a href="/order/cart.aspx" class="header-cart-a">
+                        <a href="http://127.0.0.1/MYyaya/MyYAYA/html/cart.html" class="header-cart-a">
                             <svg version="1.1" role="presentation" width="16" height="14.222222222222221"
                                 viewBox="0 0 576 512" class="fa-icon" style="vertical-align: text-top;">
                                 <path
@@ -526,7 +526,7 @@
     // 顶部滑过功能
     $(function () {
         // 检查是否保存账号信息
-        if(Cookie.getItem("username")&&Cookie.getItem("password")){
+        if (Cookie.getItem("username") && Cookie.getItem("password")) {
             $("#loginorno").html(`
             Hi，<a href="/mycenter/" title="进入个人中心" style="margin:0;">${Cookie.getItem("username")}</a>           
             <a href="/myCenter/myLevel.aspx" target="_blank" style="margin:0;" title="会员等级">
@@ -537,7 +537,7 @@
             `)
         }
         // 退出功能
-        $("#tuichu").click(function(){
+        $("#tuichu").click(function () {
             Cookie.clear();
             $("#loginorno").html(`Hi，欢迎来丫丫！<a href="http://127.0.0.1/MYyaya/MyYAYA/html/login.html" rel="nofollow">登录</a><a href="http://127.0.0.1/MYyaya/MyYAYA/html/register.html"
                             rel="nofollow">免费注册</a>`)
@@ -661,19 +661,23 @@
                     resolve();
                 });
 
-            }),new Promise(function (resolve, reject) {
+            }), new Promise(function (resolve, reject) {
                 $("#tool-bar").load("rightbox.html", function () {
                     console.log("加载了右侧标签");
                     resolve();
                 });
 
             })
-        ]).then(function(){
-                $(".scroll-to-top").click(function(){
-                    window.scrollTo(0,0);
-                })
-                
+        ]).then(function () {
+            $(".scroll-to-top").click(function () {
+                window.scrollTo(0, 0);
             })
+            var tempCount = window.localStorage.getItem("shopListCount");
+            if (tempCount) {
+                $("#cartcount").html(tempCount);
+
+            }
+        })
     })
 </script>
 

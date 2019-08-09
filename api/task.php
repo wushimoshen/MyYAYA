@@ -14,7 +14,8 @@ for($i = 0;$i<count($data);$i++){
     $des = $data[$i]["des"];
     $price = $data[$i]["price"];
     $pingjia = $data[$i]["pingjia"];
-    $sql = "INSERT INTO `list` (`gid`,`img`, `des`, `price`, `pingjia` ) VALUES ('$gid','$img', '$des', '$price', '$pingjia')";
+    $title  = $data[$i]["title"];
+    $sql = "INSERT INTO `list` (`gid`,`img`, `des`, `price`, `pingjia`,`title` ) VALUES ('$gid','$img', '$des', '$price', '$pingjia', '$title')";
     mysqli_query($con,$sql);
 }
 ?>

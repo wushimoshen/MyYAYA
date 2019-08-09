@@ -1,11 +1,13 @@
 let aa = [];
-var a = document.getElementsByClassName("lazy-img main-pic");
+var a = document.querySelectorAll(".main-pic-link .main-pic");
 var b = document.getElementsByClassName("lines-2 mt-5");
 var c = document.getElementsByClassName("red font-14 el-popover__reference");
 var d = document.querySelectorAll(".grey-9 .grey-9");
+var f = document.querySelectorAll(".sku-color .flex-child-noshrink");
     for(var i = 0;i<a.length;i++){
         let obj = {};
-        obj.img = a[i].src
+        obj.img = a[i].src;
+        obj.title = f[i].title;
         aa.push(obj);
     };
     Array.from(b).forEach((ele,i)=>{

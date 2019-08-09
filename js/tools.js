@@ -22,6 +22,12 @@
 
             })
         ]).then(function () {
+            var tempCount =window.localStorage.getItem("shopListCount");
+            if(tempCount){
+                $("#cartcount").html(tempCount);
+                
+            }
+            
             if (Cookie.getItem("username") && Cookie.getItem("password")) {
                 $("#loginorno").html(`
             Hi，<a href="/mycenter/" title="进入个人中心" style="margin:0;">${Cookie.getItem("username")}</a>           
