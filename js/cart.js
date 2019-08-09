@@ -84,15 +84,13 @@ $(function () {
         getInfo(shopData);
         // 单选框按钮
         $(".cart-box").on("click", ".cart-checkbox-x", function () {
-            let index = $(this).parent().parent().parent().parent().index() - 1;
+            var index = $(this).parent().parent().parent().parent().index() - 1;
             if ($(this).is(":checked") == false) {
                 console.log("111111111111111");
                 shopData[index].ischeked = 0;
                 console.log(index);
-
                 window.localStorage.setItem("shopListData", JSON.stringify(shopData));
                 getInfo(shopData);
-
             } else {
                 console.log("22222222222222222");
                 console.log(index);
@@ -149,6 +147,7 @@ $(function () {
             let addEle = $(this).parent().parent().parent().parent();
             shopData.splice(addIndex, 0, shopData[addIndex]);
             shopCount++;
+            window.location.reload();
             window.localStorage.setItem("shopListCount", shopCount)
             window.localStorage.setItem("shopListData", JSON.stringify(shopData));
             getInfo(shopData);

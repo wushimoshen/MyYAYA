@@ -53,7 +53,10 @@
             })
             // 侧边栏
             $(".scroll-to-top").click(function () {
-                window.scrollTo(0, 0);
+                // window.scrollTo(0, 0);
+                $("html,body").animate({
+                    scrollTop:0
+                })
             })
             // 个人中心
 

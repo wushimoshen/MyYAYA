@@ -620,7 +620,10 @@
         $("#dianti a").click(function (e) {
             var arr = [665, 965, 1665, 2236, 2813, 3396, 3976, 4551, 5120]
             e.preventDefault();
-            window.scrollTo(0, arr[$(this).index()]);
+            // window.scrollTo(0, arr[$(this).index()]);
+            $("html,body").animate({
+                    scrollTop:arr[$(this).index()]
+                })
             $(this).addClass("active").siblings().removeClass("active");
         });
         //电梯根据页面滚动而变化
@@ -670,7 +673,9 @@
             })
         ]).then(function () {
             $(".scroll-to-top").click(function () {
-                window.scrollTo(0, 0);
+                   $("html,body").animate({
+                    scrollTop:0
+                })
             })
             var tempCount = window.localStorage.getItem("shopListCount");
             if (tempCount) {
