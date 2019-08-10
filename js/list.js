@@ -9,7 +9,7 @@ $(function () {
             data: `page=${page}&orderType=${orderType}`,
             dataType: "json",
             success: function(response) {
-                console.log(response);
+                // console.log(response);
                 // [2] 根据数据渲染页面
                 var res = response.data.map(ele => {
                     // console.log(ele.title);

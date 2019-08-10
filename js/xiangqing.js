@@ -40,8 +40,8 @@ $(function () {
     var tempdata =JSON.parse(window.localStorage.getItem("shopListData"));
     var dataCount = tempcount?tempcount:0;
     var dataArray = tempdata?tempdata:[];
-    console.log(dataArray);
-    console.log(tempcount);
+    // console.log(dataArray);
+    // console.log(tempcount);
     var src = $(".responsive-image").eq(0).attr("src");
         var des = $(".titleDes").html();
         var price = $(".font-22").html().slice(1);
