@@ -12,7 +12,7 @@ $(function () {
                 console.log(response);
                 // [2] 根据数据渲染页面
                 var res = response.data.map(ele => {
-                    console.log(ele.title);
+                    // console.log(ele.title);
                     
                    return `<li data-id="${ele.gid}" title="${ele.title}">
                     <a class="big_img" href="javascript:void(0)"><img src=${ele.img} alt=""></a>
@@ -70,6 +70,7 @@ $(function () {
  
         
     $(".god_bar li a").click(function() {
+        $(this).addClass("paixu").siblings().removeClass("paixu");
         orderType = $(this).index();
         getList(0);
     })

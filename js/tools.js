@@ -3,20 +3,20 @@
         Promise.all([
             new Promise(function (resolve, reject) {
                 $("#head").load("yyheader.html", function () {
-                    console.log("加载了两个标签");
+                    // console.log("加载了两个标签");
                     resolve();
                 });
 
             }),
             new Promise(function (resolve, reject) {
                 $("#foot").load("bottom.html", function () {
-                    console.log("加载了两个标签");
+                    // console.log("加载了两个标签");
                     resolve();
                 });
 
             }), new Promise(function (resolve, reject) {
                 $("#tool-bar").load("rightbox.html", function () {
-                    console.log("加载了右侧标签");
+                    // console.log("加载了右侧标签");
                     resolve();
                 });
 

@@ -12,10 +12,16 @@ if($typeOrder == 0)
   $sql = "SELECT * FROM `list` order by `gid` limit $page , 20";
 }else if($typeOrder == 1) //升序
 {
-  $sql = "SELECT * FROM `list` ORDER BY `list`.`price` DESC limit $page , 20";
+  // $sql = "SELECT * FROM `list` ORDER BY `list`.`price` DESC limit $page , 20";
+  $sql = "SELECT * FROM `list` ORDER BY  `price` DESC limit $page , 20";
+
+  // ALTER TABLE  `list` ORDER BY  `price`
+  // ALTER TABLE  `list` ORDER BY  `price` DESC
 }else if($typeOrder == 2) //降序
 {
-  $sql = "SELECT * FROM `list` ORDER BY `list`.`price` ASC limit $page , 20";
+  // $sql = "SELECT * FROM `list` ORDER BY `list`.`price` ASC limit $page , 20";
+  $sql = "SELECT * FROM `list` ORDER BY  `price` limit $page , 20";
+
 }
 $result = mysqli_query($con,$sql);
 

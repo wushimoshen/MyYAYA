@@ -1627,6 +1627,9 @@ textarea {
     vertical-align: middle;
     position: relative;
   }
+  .box .paixu{
+    color: #4fb99f;
+  }
   .box main .list_right .god_bar li .price {
     padding-right: 30px;
   }
